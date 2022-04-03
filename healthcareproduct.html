@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/32979f5c51.js" crossorigin="anonymous"></script>
+    <title>Health Care Product</title>
+    <link rel="stylesheet" type="text/css" href="healthCareslick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="healthCareslick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<style>
+
+    /* 1st page */
+
+    
+
+    
+
+
+#btn:focus{ outline: none; }
+@media only screen and (max-width: 480px){
+    .modal-dialog{ width: 95% !important; }
+    .modal-content .modal-body{
+        padding: 60px 20px 40px !important;
+    }
+}
+
+
+
+
+
+
+
+#formcontainer{
+          width: 100%;
+          height: 600px;
+          /* border:1px solid red; */
+          display:flex;
+          justify-content: center;
+          align-items: center;
+    }
+    #form {
+  width: 500px;
+  height: 550px;
+  /* border: 1px solid rgb(7, 6, 6); */
+   /* margin-left: 460px; */
+  background: white;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+#imgdiv{
+    width:100%;
+    height:120px;
+    /* border:1px solid red; */
+    background-color:rgb(16,132,126);
+}
+#imgdiv>img{
+    width:40%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+
+#num {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 9px;
+  width: 320px;
+  height: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+#btn{
+  width: 320px;
+  height:50px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:rgb(16,132,126);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#btn:focus{
+    background-color: rgb(16,132,126);
+}
+
+
+#pnew{
+    padding-left: 35px;
+    margin-bottom: -25px;
+}
+
+    #label{
+        font-size: 16px;
+        color: rgb(94, 91, 91);
+        padding-left: 30px;
+    }
+
+    #form>p{
+        font-size: 12px;
+    }
+    #a5{
+        cursor: pointer;
+        color: green;
+    }
+
+    #p1{
+        color: red;
+        padding-left: 30px;
+        
+    }
+
+
+
+
+
+    body{
+    margin: auto;
+}
+#Healthcontainer{
+    width:100%;
+    height:auto;
+    /* border:1px solid red; */
+    background-color: rgb(16,132,126);
+    font-family: sans-serif;
+}
+
+#div1{
+    width:100%;
+    height:70px;
+    /* border:1px solid blue; */
+    display: flex;
+   padding-top: 7px;
+}
+#div1-1st{
+   width:160px;
+   height:60px;
+   /* border:1px solid teal; */
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+  
+}
+
+#pharmeasyimg{
+   width:100%;
+   height:90%;
+   cursor: pointer;
+}
+
+#div1-2nd{
+   width:850px;
+   height:51px;
+   /* border:1px solid blue; */
+   margin-left: 25px;
+   margin-top: 9px;
+   margin-bottom: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border-radius: 9px;
+}
+
+#selectpin{
+   height: 50px;
+   width:150px;
+   border:0;
+   
+   border-radius: 9px 0px 0px 9px;
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+   padding-left: 5px;    
+}
+#search{
+height: 50px;
+   width:700px;
+   padding-left: 12px;
+   border: 0;
+   /* border-radius: 0px 0px 0px 0px; */
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+}
+#btntop{
+      width:50px;
+      height:50px;
+      background-color: aliceblue;
+      border: 0;
+      border-radius: 0px 9px 9px 0px;
+    }
+    #btntop>img{
+      height:40px;
+    }
+
+
+#div2{
+    width:100%;
+    height:57px;
+    /* border:1px solid blue; */
+    display: flex;
+ align-items: center;
+ /* background-color: rgb(16,132,126); */
+ /* position:relative; */
+
+}
+#div2-1st{
+   width:475px;
+   height:57px;
+   /* border:1px solid teal; */
+   margin-left: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 18px;
+   font-weight: 400;
+
+}
+/* a{
+   text-decoration: none;
+   color: white;
+} */
+.a1{
+    color:white;
+    text-decoration: none;
+}
+.a1:hover{
+   border-bottom: 3px solid white;
+   height: 25px;
+   color: white;
+   text-decoration: none;
+}
+#div2-2nd{
+   width:400px;
+   height:57px;
+   /* border:1px solid red; */
+   margin-left: 300px;
+   display: flex;
+   align-items: center;
+   font-size: 18px; 
+}
+
+#offers{
+   margin-right: 47px;
+   color:white;
+   text-decoration: none;
+}
+
+.modal-dialog{
+    width: 350px;
+   
+}
+#btn123{
+    border: 0;
+    background-color:rgb(16,132,126);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+#img111{
+    margin-left: 30px;
+}
+
+#cart{
+color:white;
+  margin-right:25px;
+  text-decoration: none;
+}
+
+#div2-2nd>img{
+   cursor: pointer;
+}
+
+#div3{
+ width:100%;
+ height:70px;
+ /* border:1px solid red; */
+ display: flex;
+ align-items: center;
+ font-size: 12px;
+ font-family: sans-serif;
+ 
+}
+
+#homeHealthcare{
+   color: black;
+   margin-left: 170px;
+}
+#homeHealthcare+p{
+   margin-left: 15px;
+   margin-top: 15px;
+}
+
+
+
+
+
+#div--1,#div--6{
+  margin-left: 450px;
+  width:400px;
+  height:530px;
+}
+    
+
+
+
+#div--5{
+  /* margin-top: -280px; */
+  width:0%;
+  margin-left: 35px;
+  height: 20px;
+  font-size: 14px;
+  color: blue;
+  text-decoration:dotted;
+  
+}
+
+
+
+#div--3{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+#formcontainer1{
+          width: 100%;
+          height: 600px;
+          /* border:1px solid red; */
+          display:flex;
+          justify-content: center;
+          align-items: center;
+    }
+    #form1 {
+  width: 500px;
+  height: 50px;
+  /* border: 1px solid rgb(7, 6, 6); */
+   margin-top:-15px;
+  
+  background: white;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+#imgdiv1{
+    width:100%;
+    height:120px;
+    /* border:1px solid red; */
+    background-color:rgb(16,132,126);
+}
+#imgdiv1>img{
+    width:40%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+
+#num1 {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 9px;
+  width: 320px;
+  height: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+#btn1{
+  width: 320px;
+  height:50px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:rgb(16,132,126);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#btn1:focus{
+    background-color: rgb(16,132,126);
+}
+
+
+#pnew1{
+    padding-left: 35px;
+    /* padding-top: 60px; */
+}
+
+    #label1{
+        font-size: 16px;
+        color: rgb(94, 91, 91);
+        padding-left: 30px;
+    }
+
+    #form1>p{
+        font-size: 12px;
+    }
+    #a5{
+        cursor: pointer;
+        color: green;
+    }
+
+    #p2{
+        color: red;
+        padding-left: 35px;
+    }
+
+
+
+    /* 1st page over */
+
+
+    /* your page */
+
+
+    #div4{
+   width: 73.5%;;
+   /* height: 300px; */
+   /* border:1px solid red; */
+   /* overflow: hidden; */
+   margin: auto;
+   /* display: flex; */
+   /* justify-content: center; */
+}
+
+.slick-slide {
+      margin: 0 7px;
+  }
+
+  /* the parent */
+  .slick-list {
+      margin: 0 -10px;
+  }
+/* #div4>div{
+width:75%;
+height: 100%;
+border: 1px solid blue;
+display: flex;
+justify-content: center;
+} */
+
+/* .img3{
+overflow:hidden;
+} */
+/* #img4{
+width:70%;
+padding-left: 16px;
+padding-right: 16px;
+} */
+
+#div5{
+width:100%;
+height:auto;
+display: flex;
+justify-content: center;
+}
+#div6{
+   width:75%;
+   height: auto;
+   /* border: 1px solid teal; */
+   margin-top: 30px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: repeat(auto);
+   gap:15px;
+   
+}
+
+#div7{
+  height: 120px;
+  border:1px solid grey;
+  display:flex;
+  /* justify-content: space-around; */
+  border-radius: 9px;
+}
+#div7:hover{
+   border: 2px solid rgb(3, 173, 173);
+   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+   cursor: pointer;
+}
+
+#div8{
+width:70%;
+height:100%;
+/* border:1px solid teal; */
+display:flex;
+  justify-content:space-around;
+  align-items:center;
+  font-size: 15px;
+font-family:sans-serif ;
+padding-left: 10px;
+
+}
+
+#img1{
+width:30%;
+height: 70px;
+}
+
+#div11{
+width:66%;
+/* border: 1px solid red; */
+padding-left: 25px;
+
+}
+#div9{
+width:25%;
+height:100%;
+/* border:1px solid green; */
+display:flex;
+align-items: center;
+
+}
+
+#div10{
+width:100%;
+height:auto;
+/* border:1px solid rgb(128, 68, 0); */
+text-align: end;
+padding-right: 15px;
+line-height: 3px;
+font-size: 14px;
+font-family:sans-serif ;
+color: rgb(22,135,110);
+}
+
+
+#div12{
+width:100%;
+height:auto;
+/* border-bottom: 1px solid rgb(99, 98, 98); */
+display: flex;
+justify-content: center;
+
+}
+#div13{
+width:77%;
+   height: 100%;
+   /* border: 1px solid  blue; */
+   margin-top: 50px;
+   margin-bottom: 80px;
+   font-family: sans-serif;
+}
+
+#div13>h2{
+padding-left: 15px;
+font-size: 18px;
+font-weight: 500;
+color: rgb(17, 17, 87);
+line-height: 35px;
+}
+
+#div13>p{
+padding-left: 15px;
+font-size: 16px;
+color:grey;
+line-height: 25px;
+
+}
+
+
+ul>li{
+line-height: 30px;
+color:grey;
+font-size: 16px;
+
+}
+
+
+
+    /* your page over */
+
+
+
+    /* 2nd page */
+
+    #div14{
+width: 100%;
+height: auto;
+display:flex;
+justify-content: center;
+border-top: 1px solid rgb(117, 116, 116);
+border-bottom: 1px solid rgb(117, 116, 116);
+margin-bottom: 25px;
+}
+#div15{
+width: 60%;
+height: auto;
+/* border:1px solid red; */
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(auto);
+gap:15px;
+font-family: sans-serif;
+}
+
+#div15>div{
+height: 290px;
+/* border:1px solid teal; */
+padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 24px;
+padding-right: 25px;
+}
+#div15>div>h2{
+font-size: 18px;
+font-weight: 600;
+color: rgb(17, 17, 87);
+}
+#div15>div>p{
+font-size: 16px;
+line-height: 25px;
+color:grey;
+}
+
+#div16{
+width: 100%;
+height: 500px;
+/* border: 1px solid red; */
+display: flex;
+justify-content: center;
+
+}
+#div17{
+width:78%;
+   height: 100%;
+/* border:1px solid blue; */
+display: flex;
+align-items: center;
+gap:125px;
+
+}
+#div18{
+width:20%;
+height: 420px;
+/* border:1px solid teal; */
+}
+#div18>img{
+width:100%;
+height:100%;
+}
+
+#div19{
+width:50%;
+height: 420px;
+/* border:1px solid teal; */
+font-family: sans-serif;
+}
+#div19>p{
+padding-top: 5px;
+font-size: 19px;
+color:rgb(104, 102, 102);
+line-height: 25px;
+}
+
+#div20{
+height:auto;
+width: 70%;
+display: flex;
+gap:20px;
+/* border:1px solid blue; */
+
+}
+#div20>div{
+ height: 55px;
+ width: 50%;
+ border-radius: 6px;
+ cursor: pointer;
+ background-color:rgb(101, 104, 105);
+ border: 0;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 13px;
+ 
+}
+
+#div20>div:hover{
+background-color:rgb(77, 70, 53) ;
+}
+
+
+#div21{
+width: 100%;
+height: auto;
+border-top: 1px solid whitesmoke;
+display: flex;
+justify-content: center;
+background-color: rgb(244,247,251);
+margin-bottom: -15px;
+}
+#div22{
+ width: 85%;
+ height: auto;
+ /* border:1px solid blue; */
+
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ grid-template-rows: repeat(auto);
+ 
+}
+
+#div22>div{
+  /* border:1px solid teal; */
+  padding-top: 20px;
+  padding: 20px;
+ 
+}
+
+#div22>div>h2{
+font-size: 18px;
+font-weight: 600;
+color: rgb(17, 17, 87);
+}
+
+.a3{
+color: black;
+line-height: 35px;
+font-size: 16px;
+color: #4f585e;
+font-family: sans-serif;
+text-decoration: none;
+}
+
+
+
+#a4{
+color: #4f585e;
+display: block;
+line-height: 35px;
+font-size: 16px;
+font-family: sans-serif;
+text-decoration: none;
+}
+
+
+#div25{
+width:100%;
+height:230px;
+background-color: rgb(244,247,251);
+border-top: 1px solid whitesmoke;
+}
+
+
+#div25>h2{
+margin-left: 153px;
+font-size: 18px;
+font-weight: 600;
+color: rgb(17, 17, 87);
+padding-top: 20px;
+}
+
+#div27{
+ width: auto;
+ height: auto;
+ display: flex;
+ justify-content: center;
+}
+
+
+#div25>div>div{
+ display: flex;
+ width:77%;
+ height: auto;
+ /* border:1px solid blue; */
+
+} 
+
+#div26{
+width:77%;
+/* border:1px solid teal; */
+display: grid;
+grid-template-columns: repeat(11,1fr);
+grid-template-rows: repeat(auto);
+gap:3px;
+}
+
+#div26>img{
+width: 45px;
+height: 40px;
+}
+
+#div28{
+padding-left: 25px;
+font-size: 16px;
+font-family: sans-serif;
+color: #4f585e;
+}
+
+
+.fa-brands{
+margin-top: 15px;
+font-size: 30px;
+color: #10847E;
+padding-right: 20px; 
+}
+
+.fa-google-play,.fa-apple{
+color: white;
+ padding-bottom: 15px;
+}
+
+
+#div___anchor{
+  margin-left: 200px;
+  margin-right: -100px;
+  text-decoration: none;
+  color: black;
+}
+
+    /* 2nd page over */
+</style>
+<body>
+    <!-- 1st page code -->
+
+    <div id="Healthcontainer">
+        <div id="div1">
+           <div id="div1-1st">
+            <a href="homepage.html">   <img id="pharmeasyimg" src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpharmeasy-logo-white.png&w=256&q=75"/></a>  
+            </div>
+            <div id="div1-2nd">
+                <select id="selectpin">
+                    <option value="pincode">Select Pincode</option>
+                </select>
+
+                <input id="search" type="search" value="" placeholder=" Search medicines/Healthcare Products @ 18% off">
+                <button id="btntop"><img src="search.jpg"/></button>
+            </div>
+        </div>
+
+
+        <div id="div2">
+            <div id="div2-1st">
+                <a class="a1" href="Ordermedicine.html" >Order Medicines</a>
+                <a class="a1" href="healthcareproduct.html" >Healthcare Products</a>
+                <a class="a1" href="LabTest.html" >Lab Tests</a>
+            </div>
+            <div id="div2-2nd">
+                <img src="offerimg.jpg"/>
+                <a  id="offers"href="Offer.html" ></i> Offers</a>
+                <img src="loginimg.jpg"/>
+               
+
+
+
+
+                <!-- " class="modal-header -->
+
+        
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div id="div--1"class="modal-content">
+                        <!-- <div id="div--2"> -->
+                          <!-- <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5> -->
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- </div> -->
+                        <!-- <div class="modal-body"> -->
+                          <!-- Show a second modal and hide this one with the button below. -->
+
+
+                          <form id="form">
+                          
+                            <div id="imgdiv">
+                        
+                              <img src="pharmeasysignupimg.jpg" />
+                            </div> 
+                         
+                        
+                           <br>
+                             
+                             <label id="label" for="">Quick Login / Register</label>
+                           <br>
+                              <input  id="num" type="tel" value="" placeholder="Enter your phone number"/>
+                                <p id="p1"></p>
+                              
+                               <input id="btn" type="submit" value="Continue"/>
+                               
+                               
+                             
+
+                               <!-- class="modal-footer" -->
+
+                        <!-- </div> -->
+                        <!-- <div> -->
+                          <a id="div--5"   data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" type="button"> </a>
+                          <p id="pnew">By clicking continue, you agree with our <a id="a5">Privacy Policy</a> </p>
+                        </form>
+                          <!-- class="btn btn-primary" -->
+                          <!--  -->
+                          <!--  -->
+                    
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                  </div>
+                
+
+
+
+                  <!-- class="modal-header" -->
+                  <div  class="modal fade"   id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div id="div--6"class="modal-content">
+                        <div>
+                          <!-- <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5> -->
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <!-- class="modal-body" -->
+                        <div >
+                          <!-- Hide this modal and show the first with the button below. -->
+
+                          <form id="form1">
+                          
+                            <div id="imgdiv1">
+                        
+                              <img src="pharmeasysignupimg.jpg" />
+                            </div> 
+                         
+                        
+                           <br>
+                             
+                             <label id="label1" for="">Enter OTP</label>
+                           <br>
+                              <input  id="num1" type="num" value="" placeholder="Enter OTP 1234"/>
+                                <p id="p2"></p>
+                              
+                               <input id="btn1" type="submit" value="Continue"/>
+                               
+                                <p id="pnew1">By clicking continue, you agree with our <a id="a5">Privacy Policy</a> </p>
+                               </form>
+
+                        </div>
+                        <!-- class="modal-footer" -->
+                        <div >
+                          <!-- <button id="div--4" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <a id="div--3"    data-bs-toggle="modal" href="#exampleModalToggle" >Login / Signup</a>
+               
+             
+
+
+
+                  <!-- class="btn btn-primary" -->
+
+
+
+
+
+
+
+                <img id="img111" src="cartimg.jpg"/>
+                <a id="cart" href="pharmeasyCart.html" >cart</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="hidden"></div>
+
+    <div id="div3">
+        <a id="homeHealthcare" href="home.html">Home</a>
+        <p> >  Healthcare</p>
+    </div>
+
+
+    <!-- 1st page over code -->
+
+
+
+    <!-- your code page -->
+
+    <div id="div4" class="customContainer">
+        
+        <img class="img3" src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcms-contents.pharmeasy.in%2Fbanner%2F23f9dc691a0-Otrivin-CB.jpg&w=750&q=75"/>
+        <img id="img4" src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcms-contents.pharmeasy.in%2Fbanner%2Fe5567460c9b-Fast-up-CB-min.png&w=750&q=75"/>
+        <img class="img3" src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcms-contents.pharmeasy.in%2Fbanner%2F60b1a9b7f03-Mamaexpert_C_B.jpg&w=750&q=75"/>
+        <img class="img3" src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcms-contents.pharmeasy.in%2Fbanner%2F30b28a62ab0-Vicks-April.jpg&w=750&q=75"/>
+        <img src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcms-contents.pharmeasy.in%2Fbanner%2Ff97f8619caf-Boldcare-Men-InsideCB-Nov21.png&w=750&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcms-contents.pharmeasy.in%2Fbanner%2F03d79e18a66-sandpup.jpg&w=750&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcms-contents.pharmeasy.in%2Fbanner%2Fc931baaffb3-Sidd-CB.jpg&w=750&q=75" alt="">
+
+</div>
+
+<div id="div5">
+   <a id="div___anchor" href="products.html"  > <div id="div6"></div></a>
+</div>
+
+<div id="div12">
+    
+    <div id="div13">
+
+    <h2>Shop Safely And Worry-Free On PharmEasy</h2>
+    <p>PharmEasy is a renowned name in the online shopping of Over The Counter or healthcare products and other daily essentials. Ordering online on PharmEasy is convenient, fast and hassle-free; you can avoid the annoyance of queuing up at your local pharmacy and also avail of huge discounts of up to 80% OFF. Purchasing the healthcare requirements such as medical devices and nutritional supplements that you need will no longer burn a hole in your pocket. At PharmEasy, you are sure to find everything that you need because we have products across all healthcare categories.</p>
+
+    <h2>Why choose PharmEasy?</h2>
+    <ul>
+       <li>8400+ Brands</li>
+       <li>35K products in our stock</li>
+       <li>Delivery to 22000+ pin codes</li>
+       <li>Delivered to 50 lakh+ families</li>
+       <li>Over 2M customers served</li>
+    </ul>
+
+    <h2>Our most popular categories:</h2>
+     <p>We have a range of categories and products, some which are:</p> 
+
+     <h2>Devices</h2>
+     <p>With the pandemic upending our lives, we have all realized that there are some medical devices that we need to keep in our homes such as Oximeter, Thermometer, Inhaler, Blood pressure monitor, Glucometer.</p>
+ 
+     <h2>Personal care</h2>
+     <p>Personal care products can include a wide range of products such as Bath products, , Skincare essentials, Razor blades, Toothpaste and toothbrush, Wet wipes, Lip balm, Face masks, Hand sanitizer, etc.</p>
+ 
+     <h2>Nutrition and fitness supplements</h2>
+     <p>To give your health a helping hand, you can order a wide variety of health supplements including Health drinks, Nutritional powder, Nutrition tablets/capsules.</p>
+ 
+     <h2>Ayurvedic care</h2>
+     <p>Place your trust in the goodness of natural and organic ayurvedic products for an all-around healthy mind and body. There’s plenty to choose from such as Aloe vera juice, Moringa capsules, Garlic capsules.</p>
+ 
+ 
+  <h2>Home care</h2>
+  <p>Home care products are things you need every day such as disinfectant spray, phenyl, dishwashing liquid, etc. Get them all at spectacular discounts on PharmEasy.</p>
+  
+  <h2>Baby and mom care</h2>
+  <p>PharmEasy also has an impressive range of baby and mom care products including Diapers, Baby bath products, Infant formula food, Mother’s health drinks, Diaper rash creams, Baby wipes.</p>
+ 
+   <h2>Our top brands:</h2>
+   <p>Get products from the most famous and trusted brands including Accu-chek, Dettol, Horlicks, Baidyanath, Sebamed.</p>
+
+   <h2>You are safe with PharmEasy:</h2>
+   <p>Given the times, we are taking all precautions to ensure that we keep everyone safe - our customers and the people we work with.</p>
+
+  <h2>We ensure</h2>
+  <ul>
+      <li>Regular sanitization of our premises and warehouses</li>
+      <li>Temperature checks of our employees and delivery partners</li>
+      <li>No-contact door-step delivery</li>
+      <li>Sanitized packaging</li>
+  </ul>
+
+  <h2>Your safety is our priority</h2>
+  <p>Stay safe at home and shop at your convenience from PharmEasy. All you have to do is place your order and we will try to deliver it at the earliest.</p>
+
+
+</div>
+
+</div>
+
+
+
+    <!-- your code page over -->
+
+
+    <!-- 2nd page code -->
+
+    <div id="div14">
+        <div id="div15">
+            <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FgenuineMedicine.svg&w=64&q=75"/>
+                <h2>1 Lakh+ Products</h2>
+                <p>We maintain strict quality controls on all our partner retailers, so that you always get standard quality products.</p>
+            
+            </div>
+    
+            <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FsecurePayment.svg&w=64&q=75"/>
+                <h2>Secure Payment</h2>
+                <p>100% secure and trusted payment protection</p>
+            </div>
+    
+            <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FeasyReturn.svg&w=64&q=75"/>
+                <h2>Easy Return</h2>
+                <p>We have a new and dynamic return window policy for medicines and healthcare items. Refer FAQs section for more details.</p>
+            </div>
+           
+           
+        </div>
+        
+    </div>
+    
+    
+    <div id="div16">
+        <div id="div17">
+            <div id="div18">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FfooterMobile.jpg&w=256&q=75"/>
+            </div>
+            <div id="div19">
+                <p>Download the App for Free</p>
+                <div id="div20">
+                    <div><i class="fa-brands fa-google-play"></i>Google Play</div>
+                    <div><i class="fa-brands fa-apple"></i>Apple Store</div>
+                </div>
+              
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="div21">
+        <div id="div22">
+            <div>
+                <h2>Company</h2>
+               <a class="a3" href="#">About Us</a>
+               <br>
+               <a class="a3" href="#">Careers</a>
+               <br>
+               <a class="a3" href="#">Blog</a>
+               <br>
+               <a class="a3" href="#">Partner with PharmEasy</a>
+               <br><br>
+    
+                <h2>Our Services</h2>
+                <a class="a3" href="">Order Medicine</a>
+                <br>
+                <a class="a3" href="">Healthcare Products</a>
+                <br>
+                <a class="a3" href="">Lab Tests</a>
+                <br>
+            </div>
+    
+            <div id="div24">
+                <h2 id="a33">Featured Categories</h2>
+            </div>
+    
+            <div>
+                <h2>Need Help</h2>
+                <a class="a3" href="">Browse All Medicines</a>
+               <br>
+               <a class="a3" href="">Browse All Molecules</a>
+               <br>
+               <a class="a3" href="">Browse All Cities & Areas</a>
+               <br>
+               <a class="a3" href="">FAQs</a>
+               <br><br>
+    
+               <h2>Policy Info</h2>
+               <a class="a3" href="">Editorial Policy</a>
+               <br>
+               <a class="a3" href="">Privacy Policy</a>
+               <br>
+               <a class="a3" href="">Vulnerability Disclosure Policy</a>
+               <br>
+               <a class="a3" href="">Terms and condition</a>
+               <br>
+               <a class="a3" href="">Customer Support Policy</a>
+               <br>
+               <a class="a3" href="">Return Policy</a>
+               <br>
+    
+            </div>
+    
+            <div>
+                <h2>FOLLOW US</h2>
+                <div>
+                    <a href="">  <i class="fa-brands fa-instagram-square"></i></a>
+                    <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                    <a href="">  <i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+    
+        </div>
+    
+        
+    </div>
+    
+    
+    <div id="div25">
+        <h2>Our Payment Partners</h2>
+        <div id="div27">
+          <div>
+            <div id="div26">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fgpay.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpaytm.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Famazon-pay.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fphonepe.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fmobikwik.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fairtel-money.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fola-money.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fmaestro.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fmastercard.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fvisa.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Frupay.svg&w=64&q=75" alt="">
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fdiners.svg&w=64&q=75" alt="">
+    
+            </div>
+         
+            <div id="div28">
+                <p>
+                    © 2022 PharmEasy. All Rights Reserved</p>
+            </div>
+    
+    
+           </div>
+        </div>
+    </div>
+    </div>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="healthCareslick/slick.min.js"></script><script>
+        $(document).ready(function () {
+            $('.customContainer').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true,
+                centerMode: true,
+                centerPadding: '60px',
+    
+                // accessibility: true,
+                dots: true,
+    
+                arrows: true,
+            });
+        });
+    
+    </script>
+
+
+    <!-- 2nd page code over -->
+</body>
+</html>
+
+<script>
+
+    
+document.querySelector("#form").addEventListener("submit", mybtn1)
+      arrnum=JSON.parse(localStorage.getItem("data"))||[]
+
+ function mybtn1(){
+   event.preventDefault()
+      var num=document.querySelector("#num").value
+
+   var obj={number:num}
+
+flag=0;
+flag1=0;
+flag2=0;
+   arrnum.map(function(ele){
+    if(num==ele.number && num!="" && num.length==10){
+                flag=1;
+                
+            }
+           else if(num.length!=10){
+               flag1=1;
+
+               if(num.length==0){
+                   flag2=1;
+               }
+           }
+         
+           
+
+        })
+        if(flag==1){
+         var btna= document.querySelector("#div--5")
+     
+           btna.innerHTML="click here to get otp"
+           btna.style.width="50%"
+        }
+        else{
+            if(flag1==1){
+                document.querySelector("#p1").innerText="Invalid phone number"+" "+"\u274C";
+                
+
+                if(flag2==1){
+                    document.querySelector("#p1").innerText="Please enter phone number";
+               
+                }
+            }
+
+
+          }
+          arrnum.push(obj);
+  
+  localStorage.setItem("data",JSON.stringify(arrnum))
+   
+ }
+
+ 
+
+
+
+
+ document.querySelector("#form1").addEventListener("submit",myotpfun)
+
+var otparr=[{otp:1234}]
+function myotpfun(){
+    event.preventDefault()
+
+   var num1= document.querySelector("#num1").value
+
+   
+
+    flag=0;
+    
+            otparr.map(function(ele){
+
+              if(num1==ele.otp){
+                  flag=1;
+              }
+            
+
+            })
+
+
+            if(flag==1){
+              // window.location.reload()
+              window.location.href="homepage.html"
+             var d= document.querySelector("#div--3")
+             d.innerHTML="user"
+               
+         
+              
+         
+            }
+            else{
+                document.querySelector("#p2").innerText="Invalid OTP"+" "+"\u274C";
+          
+            
+            }
+          
+           
+ 
+}
+
+
+
+
+document.querySelector("#btntop").addEventListener("click",mysearchfn)
+
+function mysearchfn(){
+  var arrsearchitem=[{item:"paracetamol"},{item:"bicasole"}]
+  var input=document.querySelector("#search")
+
+  alert("Unavailable Items")
+ 
+
+localStorage.setItem("search",JSON.stringify(arrsearchitem))
+}
+
+
+
+
+
+var getarrHCP=JSON.parse(localStorage.getItem("HealthcareProduct"))
+
+var arrHCP=[{imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2Ffd9ab1b65453385db360c1a0dfa20726.png&w=64&q=75" ,
+             heading:"Personal Care",
+            ptag:"Upto",
+             discount:"80% off"},
+
+             {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2Fd28a9f9262263ec1840b170a53bd4172.png&w=64&q=75",
+            heading:"Health Food and Drinks",
+            ptag:"Upto",
+             discount:"57% off"},
+
+             {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2F61b9f0de91653e3585a24e3c650ac55d.png&w=64&q=75",
+            heading:"Skin Care",
+            ptag:"Upto",
+             discount:"50% off"},
+
+             {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2Fa949eb79355936f09e96c2d986c89e5c.png&w=64&q=75",
+            heading:"Home Care",
+            ptag:"Upto",
+             discount:"35% off"},
+
+             {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2Fd420b3418fe03581bccd4fa9c26d4b97.png&w=64&q=75",
+            heading:"Aruvedic Care",
+            ptag:"Upto",
+             discount:"70% off"},
+
+             {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2Fedb0de3af41439a988ad4ed771cd1621.png&w=64&q=75",
+             heading:"Sexual Wellness",
+             ptag:"Upto",
+              discount:"53% off"},
+
+            {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2F0670da2370553283abea292910adc473.png&w=64&q=75",
+             heading:"Fitness & Supplyments",
+            ptag: "Upto",
+            discount:"80% off"},
+
+            {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2Fa22eee73df49335592bf1b6383b4a16e.png&w=64&q=75",
+            heading:"Mother and Baby Care",
+           ptag: "Upto",
+           discount:"50% off"},
+
+           {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2F8507b196066d39ac95af3dd0b643f2f1.png&w=64&q=75",
+           heading:"Healthcare Devices",
+          ptag: "Upto",
+          discount:"65% off"},
+
+          {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2F65a049b063c63d2ab3649289367b899f.png&w=64&q=75",
+          heading:"Surgicals and Dressing",
+         ptag: "Upto",
+         discount:"55% off"},
+
+         {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2F238fcba73526340a85bdf69e6afd0b78.png&w=64&q=75",
+             heading:"Covid Essensials",
+            ptag: "Upto",
+            discount:"77% off"},
+
+            {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2F4a3252df55f63750b61220c4d10483dd.png&w=64&q=75",
+            heading:"Health Condition",
+           ptag: "Upto",
+           discount:"65% off"},
+
+           {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2F8abcc217fc8b318fb37e54d695695b48.png&w=64&q=75",
+           heading:"Diabetic Care",
+          ptag: "Upto",
+          discount:"65% off"},
+
+          {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2Ffe5a5c014c39379e9790c36fcc309c56.png&w=64&q=75",
+          heading:"Elderly Care",
+         ptag: "Upto",
+         discount:"45% off"},
+
+         {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2Fc78304a2551f3d468b2de44ce9641b4c.png&w=64&q=75",
+             heading:"Accessories and Wearables",
+            ptag: "Upto",
+            discount:"35% off"},
+
+            {imageURL:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fdiscovery%2FcategoryImages%2F7ef42ab43b993cddbda6ab907d0d3dc3.png&w=64&q=75",
+            heading:"Pet Care",
+           ptag: "Upto",
+           discount:"30% off"}]
+
+var div6=document.querySelector("#div6")
+var div24=document.querySelector("#div24")
+
+arrHCP.map(function(ele){
+    var div7=document.createElement("div")
+    div7.id="div7"
+
+    div8=document.createElement("div")
+    div8.id="div8"
+
+    img1=document.createElement("img")
+    img1.id="img1"
+    img1.src=ele.imageURL
+
+    div11=document.createElement("div")
+    div11.id="div11"
+    p1=document.createElement("p")
+    p1.innerText=ele.heading
+
+    div9=document.createElement("div")
+    div9.id="div9"
+
+    div10=document.createElement("div")
+    div10.id="div10"
+    p2=document.createElement("p")
+    p2.innerText=ele.ptag
+    p3=document.createElement("p")
+    p3.innerText=ele.discount
+
+     var a4=document.createElement("a")
+     a4.id="a4"
+     a4.innerText=ele.heading
+     a4.href="products.html"
+    
+
+    div24.append(a4)
+    div11.append(p1)
+    div10.append(p2,p3)
+    div9.append(div10)
+    div8.append(img1,div11)
+    div7.append(div8,div9)
+    div6.append(div7)
+})
+
+localStorage.setItem("HealthcareProduct",JSON.stringify(arrHCP))
+
+
+
+</script>

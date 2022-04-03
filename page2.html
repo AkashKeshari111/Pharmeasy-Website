@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/32979f5c51.js" crossorigin="anonymous"></script>
+    <title>Lab Test Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<style>
+
+    /* 1st page */
+
+    
+
+    
+
+
+#btn:focus{ outline: none; }
+@media only screen and (max-width: 480px){
+    .modal-dialog{ width: 95% !important; }
+    .modal-content .modal-body{
+        padding: 60px 20px 40px !important;
+    }
+}
+
+
+
+
+
+
+
+#formcontainer{
+          width: 100%;
+          height: 600px;
+          /* border:1px solid red; */
+          display:flex;
+          justify-content: center;
+          align-items: center;
+    }
+    #form {
+  width: 500px;
+  height: 550px;
+  /* border: 1px solid rgb(7, 6, 6); */
+   /* margin-left: 460px; */
+  background: white;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+#imgdiv{
+    width:100%;
+    height:120px;
+    /* border:1px solid red; */
+    background-color:rgb(16,132,126);
+}
+#imgdiv>img{
+    width:40%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+
+#num {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 9px;
+  width: 320px;
+  height: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+#btn{
+  width: 320px;
+  height:50px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:rgb(16,132,126);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#btn:focus{
+    background-color: rgb(16,132,126);
+}
+
+
+#pnew{
+    padding-left: 35px;
+    margin-bottom: -25px;
+}
+
+    #label{
+        font-size: 16px;
+        color: rgb(94, 91, 91);
+        padding-left: 30px;
+    }
+
+    #form>p{
+        font-size: 12px;
+    }
+    #a5{
+        cursor: pointer;
+        color: green;
+    }
+
+    #p1{
+        color: red;
+        padding-left: 30px;
+        
+    }
+
+
+
+
+
+    body{
+    margin: auto;
+}
+#Healthcontainer{
+    width:100%;
+    height:auto;
+    /* border:1px solid red; */
+    background-color: rgb(16,132,126);
+    font-family: sans-serif;
+}
+
+#div1{
+    width:100%;
+    height:70px;
+    /* border:1px solid blue; */
+    display: flex;
+   padding-top: 7px;
+}
+#div1-1st{
+   width:160px;
+   height:60px;
+   /* border:1px solid teal; */
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+  
+}
+
+#pharmeasyimg{
+   width:100%;
+   height:100%;
+   cursor: pointer;
+}
+
+#div1-2nd{
+   width:850px;
+   height:51px;
+   /* border:1px solid blue; */
+   margin-left: 25px;
+   margin-top: 9px;
+   margin-bottom: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border-radius: 9px;
+}
+
+#selectpin{
+   height: 50px;
+   width:150px;
+   border:0;
+   
+   border-radius: 9px 0px 0px 9px;
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+   padding-left: 5px;    
+}
+#search{
+height: 50px;
+   width:700px;
+   padding-left: 12px;
+   border: 0;
+   /* border-radius: 0px 0px 0px 0px; */
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+}
+#btntop{
+      width:50px;
+      height:50px;
+      background-color: aliceblue;
+      border: 0;
+      border-radius: 0px 9px 9px 0px;
+    }
+    #btntop>img{
+      height:40px;
+    }
+
+
+#div2{
+    width:100%;
+    height:57px;
+    /* border:1px solid blue; */
+    display: flex;
+ align-items: center;
+ /* background-color: rgb(16,132,126); */
+ /* position:relative; */
+
+}
+#div2-1st{
+   width:475px;
+   height:57px;
+   /* border:1px solid teal; */
+   margin-left: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 18px;
+   font-weight: 400;
+
+}
+/* a{
+   text-decoration: none;
+   color: white;
+} */
+.a1{
+    color:white;
+}
+.a1:hover{
+   border-bottom: 3px solid white;
+   height: 25px;
+   color: white;
+   text-decoration: none;
+}
+#div2-2nd{
+   width:400px;
+   height:57px;
+   /* border:1px solid red; */
+   margin-left: 300px;
+   display: flex;
+   align-items: center;
+   font-size: 18px; 
+}
+
+#offers{
+   margin-right: 47px;
+   color:white;
+   text-decoration: none;
+}
+
+.modal-dialog{
+    width: 350px;
+   
+}
+#btn123{
+    border: 0;
+    background-color:rgb(16,132,126);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+#img111{
+    margin-left: 30px;
+}
+
+#cart{
+color:white;
+  margin-right:25px;
+  text-decoration: none;
+}
+
+#div2-2nd>img{
+   cursor: pointer;
+}
+
+#div3{
+ width:100%;
+ height:70px;
+ /* border:1px solid red; */
+ display: flex;
+ align-items: center;
+ font-size: 12px;
+ font-family: sans-serif;
+ 
+}
+
+#homeHealthcare{
+   color: black;
+   margin-left: 170px;
+}
+#homeHealthcare+p{
+   margin-left: 15px;
+}
+
+
+
+
+
+#div--1,#div--6{
+  margin-left: 450px;
+  width:400px;
+  height:530px;
+}
+    
+
+
+
+#div--5{
+  /* margin-top: -280px; */
+  width:0%;
+  margin-left: 35px;
+  height: 20px;
+  font-size: 14px;
+  color: blue;
+  text-decoration:dotted;
+  
+}
+
+
+
+#div--3{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+#formcontainer1{
+          width: 100%;
+          height: 600px;
+          /* border:1px solid red; */
+          display:flex;
+          justify-content: center;
+          align-items: center;
+    }
+    #form1 {
+  width: 500px;
+  height: 50px;
+  /* border: 1px solid rgb(7, 6, 6); */
+   margin-top:-15px;
+  
+  background: white;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+#imgdiv1{
+    width:100%;
+    height:120px;
+    /* border:1px solid red; */
+    background-color:rgb(16,132,126);
+}
+#imgdiv1>img{
+    width:40%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+
+#num1 {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 9px;
+  width: 320px;
+  height: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+#btn1{
+  width: 320px;
+  height:50px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:rgb(16,132,126);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#btn1:focus{
+    background-color: rgb(16,132,126);
+}
+
+
+#pnew1{
+    padding-left: 35px;
+    /* padding-top: 60px; */
+}
+
+    #label1{
+        font-size: 16px;
+        color: rgb(94, 91, 91);
+        padding-left: 30px;
+    }
+
+    #form1>p{
+        font-size: 12px;
+    }
+    #a5{
+        cursor: pointer;
+        color: green;
+    }
+
+    #p2{
+        color: red;
+        padding-left: 35px;
+    }
+
+
+
+    /* 1st page over */
+
+
+    /* your page */
+
+
+    #container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    /* border: 1px solid blue; */
+    display: flex;
+}
+#container>div{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+
+#div1g{
+    width: 100%;
+    height: 300px;;
+    /* border: 1px solid black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: sans-serif;
+    cursor: pointer;
+  
+
+}
+.H2{
+    color: #4f585e;
+    
+}
+.s3{
+    background-color:#ff9341 ;
+    color: white;
+    font-weight: bold;
+}
+.heartLogo{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.s2{
+    margin-left: 20px;
+    font-size: 25px;
+    color: #4f585e;
+
+}
+.s7{
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #4f585e;
+   
+}
+.s4{
+    
+    font-size: 12px;
+    text-align: center;
+
+    color: #4f585e;
+    /* color: #10847e; */
+}
+.s5{
+    font-size: 12px;
+    color: #4f585e;
+}
+
+.space1{
+    margin-left: 80px;
+}
+.s6{
+    color: #4f585e;
+   margin-left: 30px;
+}
+.b1{
+    margin-top: 30px;
+    margin-left: 80px;
+    width: 200px;
+    height: 50px;
+ background-color:    #10847e;
+color: white;
+font-size: 25px;
+cursor: pointer;
+}
+.b2{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+ background-color:    #10847e;
+color: white;
+font-size: 25px;
+cursor: pointer;
+}
+
+.s9{
+    /* background-color: red; */
+    margin-top: 20px;
+}
+.s10{
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+#div2g{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#div2g>li{
+    color: #999ea2;
+    font-size: 20px;
+}
+#div2g>ul{
+    color:#10847e ;
+    font-size: 20px;
+  margin-left: -20px;
+}
+
+#box{
+
+display: flex;
+justify-content: space-between;
+}
+/* #box>p{
+
+} */
+
+
+
+
+    #Container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+#Container>div{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+}
+#Container>div>.H3{
+    margin-left: 100px;
+}
+#Container>div>.img1{
+   margin-left: 100px;
+}
+
+.img1{
+   
+    width: 500px;
+    height: 125px;
+}
+
+#Container>div>.Div1{
+    margin-left: 100px;
+    width: 500px;
+    height: 300px;
+    /* border: 1px solid blue; */
+display: flex;
+    
+    
+
+}
+
+.Div1>.FBS1{
+    width :20%;
+    height: auto;
+    /* border: 1px solid red; */
+}
+.Div1>.FBS1>img{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+.Div1>.FBS2{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+.FBS2>h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.FBS2>h3+p>span{
+    text-decoration: line-through;
+    color: #999ea2;
+    font-size: 20px;
+
+   
+}
+.FBS2>p+p{
+   
+    color: #999ea2;
+    font-size: 20px;
+
+}
+.FBS2>p+p+button{
+    background-color: #10847e;
+    width: 48%;
+    height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.FBS2>p+p+button:hover{
+    color: white;
+}
+.FBS2>p+p+button+button{
+    background-color: #10847e;
+    width: 48%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.FBS2>p+p+button+button:hover{
+    color: white;
+}
+
+.s1{
+    margin-left: 100px;
+    color: #999ea2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.s1:hover{
+    color: #10847e ;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#paratext{
+    margin-left: 100px;
+}
+  
+
+    /* your page over */
+
+
+
+    /* 2nd page */
+
+
+    #logoSection2{
+    width: 1200px;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 50px;
+    margin: auto;
+}
+#logoSection2>div{
+    width: 24%;
+    height: auto;
+    /* border: 1px solid blue; */
+    margin-left: 20px;
+}
+#logoSection2>div>.c1{
+    color:#999ea2 ; 
+}
+#logoSection3{
+    width: 800px;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 80px;
+    margin-left: 65px;
+}
+#logoSection3>div{
+    width: 48%;
+    height: auto;
+    /* border: 1px solid blue; */
+    margin-left: 20px;
+}
+
+.size{
+    width: 210px;
+    height: 416px;
+}
+
+#logoSection3>div>div{
+    width: 100%;
+height: 15%;
+/* border: 1px solid blue; */
+margin-top: 15px;
+   
+}
+
+/* .playStore{
+    width: 100px;
+    height: auto;
+    border: 1px solid black;
+    background-color: #576066;
+    display: flex;
+} */
+
+#playStore{
+    width: 48%;
+    height: 100%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+.btnImg{
+    width: 25px;
+    height: 25px;
+}
+.btn1{
+    width: 45%;
+    height: 100%;
+    background-color: #576066;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: white;
+  
+  
+}
+.btn1>img{
+   
+    width: 25px;
+    height: 25px;
+   padding-left: 1%;
+}
+
+.btn1:hover{
+    cursor: pointer;
+}
+
+#footersection{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: #f4f7fb;
+    box-sizing: border-box;
+}
+
+#footerbox{
+    width: 1000px;
+   height: auto;
+   
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+}
+#footerbox>div{
+    margin-top: 100px;
+    width: 25%;
+    height: auto;
+    /* border: 1px solid blue; */
+    font-size: 20px;
+    padding: auto;
+    
+}
+#footerbox>div>P:hover{
+    cursor: pointer;
+}
+a{
+    
+    color: #999ea2;
+    text-decoration: none;
+}
+.font{
+    margin-top: 15px;
+  
+    font-size: 40px;
+    color: #10847e;
+}
+
+
+.fa-brands{
+    margin-top: 15px;
+  
+    font-size: 40px;
+    color: #10847e;
+}
+
+
+/* payment section page */
+
+
+#div25{
+    width:100%;
+    height:280px;
+    background-color: rgb(244,247,251);
+    border-top: 1px solid whitesmoke;
+    margin-top: -30px;
+    margin-bottom: 100px;
+    }
+    
+    
+    #div25>h2{
+        margin-top: 100px;
+    margin-left: 153px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(17, 17, 87);
+    padding-top: 20px;
+    }
+    
+    #div27{
+     width: auto;
+     height: auto;
+     display: flex;
+     justify-content: center;
+    }
+    
+    
+    #div25>div>div{
+     display: flex;
+     width:77%;
+     height: auto;
+     /* border:1px solid blue; */
+    
+    } 
+    
+    #div26{
+    width:77%;
+    /* border:1px solid teal; */
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: repeat(auto);
+    gap:3px;
+    }
+    
+    #div26>img{
+    width: 45px;
+    height: 40px;
+    }
+    
+    #div28{
+    padding-left: 25px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #4f585e;
+    }
+    
+    /*payment section end style  */
+
+
+#logoSection2{
+    width: 1200px;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 50px;
+}
+#logoSection2>div{
+    width: 24%;
+    height: auto;
+    /* border: 1px solid blue; */
+    margin-left: 20px;
+}
+#logoSection2>div>.c1{
+    color:#999ea2 ; 
+}
+#logoSection3{
+    width: 800px;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 80px;
+    margin-left: 65px;
+}
+#logoSection3>div{
+    width: 48%;
+    height: auto;
+    /* border: 1px solid blue; */
+    margin-left: 20px;
+}
+
+.size{
+    width: 210px;
+    height: 416px;
+}
+
+#logoSection3>div>div{
+    width: 100%;
+height: 15%;
+/* border: 1px solid blue; */
+margin-top: 15px;
+   
+}
+
+/* .playStore{
+    width: 100px;
+    height: auto;
+    border: 1px solid black;
+    background-color: #576066;
+    display: flex;
+} */
+
+#playStore{
+    width: 48%;
+    height: 100%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+.btnImg{
+    width: 25px;
+    height: 25px;
+}
+.btn1{
+    width: 45%;
+    height: 100%;
+    background-color: #576066;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: white;
+  
+  
+}
+.btn1>img{
+   
+    width: 25px;
+    height: 25px;
+   padding-left: 1%;
+}
+
+.btn1:hover{
+    cursor: pointer;
+}
+
+#footersection{
+    /* margin-top: 100px; */
+    width: 100%;
+    height: auto;
+    background-color: #f4f7fb;
+    box-sizing: border-box;
+}
+
+#footerbox{
+    width: 80%;
+   height: auto;
+   
+    /* border: 1px solid red; */
+    /* margin: auto; */
+    display: flex;
+    /* box-sizing: border-box; */
+}
+#footerbox>div{
+    /* margin-top: 100px; */
+    width: 25%;
+   
+    /* border: 1px solid blue; */
+    font-size: 20px;
+    /* padding: auto; */
+    
+}
+#footerbox>div>P:hover{
+    cursor: pointer;
+}
+
+
+.bold{
+    margin-top: -80px;
+}
+a{
+    
+    color: #999ea2;
+}
+.font{
+    margin-top: 15px;
+  
+    font-size: 40px;
+    color: #10847e;
+}
+
+
+.fa-brands{
+    margin-top: 15px;
+  
+    font-size: 40px;
+    color: #10847e;
+}
+
+
+    /* 2nd page over */
+</style>
+<body>
+    <!-- 1st page code -->
+
+    <div id="Healthcontainer">
+        <div id="div1">
+            <div id="div1-1st">
+           <a href="homepage.html">    <img id="pharmeasyimg" src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpharmeasy-logo-white.png&w=256&q=75"/></a> 
+            </div>
+            <div id="div1-2nd">
+                <select id="selectpin">
+                    <option value="pincode">Select Pincode</option>
+                </select>
+
+                <input id="search" type="search" value="" placeholder=" Search medicines/Healthcare Products @ 18% off">
+                <button id="btntop"><img src="search.jpg"/></button>
+            </div>
+        </div>
+
+
+        <div id="div2">
+            <div id="div2-1st">
+                <a class="a1" href="" >Order Medicines</a>
+                <a class="a1" href="" >Healthcare Products</a>
+                <a class="a1" href="" >Lab Tests</a>
+            </div>
+            <div id="div2-2nd">
+                <img src="offerimg.jpg"/>
+                <a  id="offers"href="" ></i> Offers</a>
+                <img src="loginimg.jpg"/>
+               
+
+
+
+
+                <!-- " class="modal-header -->
+
+        
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div id="div--1"class="modal-content">
+                        <!-- <div id="div--2"> -->
+                          <!-- <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5> -->
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- </div> -->
+                        <!-- <div class="modal-body"> -->
+                          <!-- Show a second modal and hide this one with the button below. -->
+
+
+                          <form id="form">
+                          
+                            <div id="imgdiv">
+                        
+                              <img src="pharmeasysignupimg.jpg" />
+                            </div> 
+                         
+                        
+                           <br>
+                             
+                             <label id="label" for="">Quick Login / Register</label>
+                           <br>
+                              <input  id="num" type="tel" value="" placeholder="Enter your phone number"/>
+                                <p id="p1"></p>
+                              
+                               <input id="btn" type="submit" value="Continue"/>
+                               
+                               
+                             
+
+                               <!-- class="modal-footer" -->
+
+                        <!-- </div> -->
+                        <!-- <div> -->
+                          <a id="div--5"   data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" type="button"> </a>
+                          <p id="pnew">By clicking continue, you agree with our <a id="a5">Privacy Policy</a> </p>
+                        </form>
+                          <!-- class="btn btn-primary" -->
+                          <!--  -->
+                          <!--  -->
+                    
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                  </div>
+                
+
+
+
+                  <!-- class="modal-header" -->
+                  <div  class="modal fade"   id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div id="div--6"class="modal-content">
+                        <div>
+                          <!-- <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5> -->
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <!-- class="modal-body" -->
+                        <div >
+                          <!-- Hide this modal and show the first with the button below. -->
+
+                          <form id="form1">
+                          
+                            <div id="imgdiv1">
+                        
+                              <img src="pharmeasysignupimg.jpg" />
+                            </div> 
+                         
+                        
+                           <br>
+                             
+                             <label id="label1" for="">Enter OTP</label>
+                           <br>
+                              <input  id="num1" type="num" value="" placeholder="Enter OTP 1234"/>
+                                <p id="p2"></p>
+                              
+                               <input id="btn1" type="submit" value="Continue"/>
+                               
+                                <p id="pnew1">By clicking continue, you agree with our <a id="a5">Privacy Policy</a> </p>
+                               </form>
+
+                        </div>
+                        <!-- class="modal-footer" -->
+                        <div >
+                          <!-- <button id="div--4" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <a id="div--3"    data-bs-toggle="modal" href="#exampleModalToggle" >Login / Signup</a>
+               
+             
+
+
+
+                  <!-- class="btn btn-primary" -->
+
+
+
+
+
+
+
+                <img id="img111" src="cartimg.jpg"/>
+                <a id="cart" href="" >cart</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="hidden"></div>
+
+    <!-- <div id="div3">
+        <a id="homeHealthcare" href="home.html">Home</a>
+        <p> >  Healthcare</p>
+    </div> -->
+
+
+    <!-- 1st page over code -->
+
+
+
+    <!-- your code page -->
+
+    <div id="container">
+        <div>
+<h2 class="H2">Test Deatails</h2>
+
+<img class="img1" src="https://cms-contents-staging.pharmeasy.in/banner/1d52ece78b6-Group16361.png?dim=590x100&dpr=1&q=100" alt="">
+
+<div id="div1g">
+    <span class="s3">Popular choice</span><br>
+    <img  class="FBS1 heartLogo" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg" alt=""> <span class="s2">Post Prandial Blood Sugar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><br>
+    <p class="s4">Available at 1 other lab but not at PharmEasy Labs(Thyrocare powered)</p>
+    <span class="s7">&#8377 700 </span>
+    <span class="s5">onwards &nbsp;</span>
+
+    <!-- <span class="s7">&#8377 999 &nbsp;&nbsp;&nbsp;</span> <span class="s4">&#8377 2684 &nbsp;&nbsp;&nbsp;</span> <span class="s5">save 62% &nbsp;&nbsp;&nbsp;</span><br>
+    <img class="space1" src="C:\Users\govind\Desktop\PharmaPage\img5.png" alt=""><span class="s6">Selected From PharmEasy Labs(Thyrocare &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Powerd)</span> <br> -->
+    <div>
+    <button class="b1">Selected </button> <br>
+    <!-- <img class="space1 s9 " src="https://assets.pharmeasy.in/web-assets/dist/e4dcfc7b.svg" alt=""><span class="s10">Recommended By Health Experts</span> -->
+</div>
+</div >
+<div id="div2g" >
+<!-- <p id="btn1">Package Includes 8 tests</p>  -->
+        <!-- <p id="btn">&#8743;</p> -->
+   
+    
+
+    <ul id="list" >
+   
+   
+    <li>Serum Electrolytes</li>
+    <li>Serum Sodium (Na)</li>
+    <li>Chloride (Cl)</li>
+    <li>BUN/Creatinine Ratio</li>
+    <li>Blood Urea Nitrogen (BUN)</li>
+    <li>Calcium (Ca)</li>
+    <li>Creatinine</li>
+    <li>Uric Acid</li>
+    <li>Serum Phosphorus (Ph)</li>
+   </ul>
+    
+</div>
+<div id="box">
+<p class="s1 " onclick="para()">Description </p>  <p class="s1" onclick="requirements()">Test requirements</p>  <p>&nbsp;&nbsp; </p>
+</div>
+<p id="paratext"></p>
+ </div>
+
+ 
+
+ <!-- sencond javascript div -->
+ <div>
+    <table>
+        <thead>
+          <tr>
+            <th></th>
+           <th></th>
+          </tr>
+        </thead>
+        <tbody>
+
+
+        </tbody>
+      
+      </table>
+      <!-- <button id="btn">selectProduct </button>
+      <button id="btn1">select Test </button> -->
+      <button id="btntan1" style="background-color: teal; width: 94%;height: 50px;color: white;">View Cart</button>
+      
+</div>
+</div>
+
+
+
+    <!-- your code page over -->
+
+
+    <!-- 2nd page code -->
+
+  <!-- logo section2 start here -->
+  <div id="logoSection2">
+    <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/9407515b.svg?dim=0x72&dpr=1&q=100" alt="">
+        <h3>Trusted Labs</h3><br><br>
+        <p class="c1">Every test booked via PharmEasy is conducted by certified labs that are 100% verified and trustworthy.</p>
+    </div>
+    <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/0105ddc1.svg?dim=0x72&dpr=1&q=100" alt="">
+        <h3>Home Visit</h3><br><br>
+        <p class="c1">With PharmEasy, you get a FREE sample pick-up* by professional phlebotomists from your home or preferred location.</p>
+    </div>
+    <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/fc71c500.svg?dim=0x72&dpr=1&q=100" alt="">
+        <h3>Timely and Accurate Reports</h3><br><br>
+        <p class="c1">Once collected, samples will be sent to labs for processing. Detailed reports will be shared within a stipulated timeline.</p>
+    </div>
+    <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/4a11ac5a.svg?dim=0x72&dpr=1&q=100" alt="">
+        <h3>Up to 70% OFF</h3><br><br>
+        <p class="c1">At PharmEasy, you save at every step! On diagnostic tests, get up to 70% OFF on various tests and test packages.</p>
+    </div>
+</div>
+
+
+</div>
+<!-- logo section2 end  here -->
+<!-- logo section3 start   here -->
+<div id="logoSection3">
+ <div>
+     <img class="size" src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg" alt="">
+ </div>
+ <div>
+    <div>
+        <p>Download the App for Free</p>
+    </div>
+    <div id="playStore">
+        <a href="www.playstore.com">
+        <button class="btn1" > <img src="https://assets.pharmeasy.in/web-assets/dist/3380aedc.png" alt=""> <span>Google Play</span></button> </a>
+
+        <a href="">
+        <button class="btn1"><img src="https://assets.pharmeasy.in/web-assets/dist/9bf5c576.png" alt=""> <span>App Store</span></button>  </a>
+    </div>
+ </div>
+</div>
+<!-- logo section3 end    here -->
+
+<!-- footer section start here -->
+<div id="footersection">
+<div id="footerbox">
+<div> 
+    <p class="bold">Company</p>
+    
+   
+    <p> <a href=""> About Us</a></p>
+    
+    <p> <a href=""> Carreers</a></p>
+    
+    <p> <a href=""> Blog</a></p>
+    
+    <p> <a href="">Partner with PharmEasy</a></p>
+    
+    <p> <a href=""> Sell at PharmEasy</a></p>
+</div>
+<div>
+    <p class="bold">Our Services</p>
+
+    <p> <a href=""> Order Medicine </a></p>
+    
+    <p> <a href=""> Healthcare Products</a></p>
+
+    <p> <a href=""> Lab Tests</a></p>
+    
+    <p class="a_bold">Need Help</p>
+
+    <p> <a href=""> Browse All Medicines</a></p>
+    
+    <p> <a href=""> Browse All Molecules</a></p>
+
+    <p> <a href=""> Browse All Cities & Areas</a></p>
+    
+    <p> <a href=""> FAQs</a></p>
+    
+
+</div>
+<div>
+    <p class="bold"> Policy Info</p>
+    
+    <p> <a href=""> Editorial Policy</a></p>
+
+    <p> <a href=""> Privacy Policy</a></p>
+
+    <p> <a href=""> Vulnerability Disclosure Policy</a></p>
+    
+    <p><a href=""> Terms and Conditions</a> </p>
+
+    <p> <a href=""> Customer Support Policy</a></p>
+    
+    <p> <a href=""> Return Policy</a></p>
+</div>
+<div >
+    <p class="bold">Follow Us</p>
+    <!-- <span ><i class="fa-brands fa-instagram"></i></span>
+    <span > <i class="fa-brands fa-instagram"></i></span>
+    <span> </span>
+    <span class="black"> <i class="fa-brands fa-instagram"> </i> </span>
+    <i class="fas fa-band-aid"></i> -->
+    <div class="font">
+        <a href="">  <i class="fa-brands fa-instagram-square"></i></a>
+  <a href=""> <i class="fa-brands fa-facebook"></i></a>
+  <a href=""> <i class="fa-brands fa-youtube"></i></a>
+  <a href="">  <i class="fa-brands fa-twitter"></i></a>
+ </div>
+</div>
+</div>
+</div>
+<!-- paymen partner setion  -->
+
+<div id="div25">
+<h2>Our Payment Partners</h2>
+<div id="div27">
+  <div>
+    <div id="div26">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fgpay.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpaytm.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Famazon-pay.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fphonepe.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fmobikwik.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fairtel-money.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fola-money.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fmaestro.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fmastercard.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fvisa.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Frupay.svg&w=64&q=75" alt="">
+        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fdiners.svg&w=64&q=75" alt="">
+
+    </div>
+ 
+    <div id="div28">
+        <p>
+            © 2022 PharmEasy. All Rights Reserved</p>
+    </div>
+
+
+   </div>
+</div>
+</div>
+</div>
+
+
+    <!-- 2nd page code over -->
+</body>
+</html>
+
+<script>
+
+    
+document.querySelector("#form").addEventListener("submit", mybtn1)
+      arrnum=JSON.parse(localStorage.getItem("data"))||[]
+
+ function mybtn1(){
+   event.preventDefault()
+      var num=document.querySelector("#num").value
+
+   var obj={number:num}
+
+flag=0;
+flag1=0;
+flag2=0;
+   arrnum.map(function(ele){
+    if(num==ele.number && num!="" && num.length==10){
+                flag=1;
+                
+            }
+           else if(num.length!=10){
+               flag1=1;
+
+               if(num.length==0){
+                   flag2=1;
+               }
+           }
+         
+           
+
+        })
+        if(flag==1){
+         var btna= document.querySelector("#div--5")
+     
+           btna.innerHTML="click here to get otp"
+           btna.style.width="50%"
+        }
+        else{
+            if(flag1==1){
+                document.querySelector("#p1").innerText="Invalid phone number"+" "+"\u274C";
+                
+
+                if(flag2==1){
+                    document.querySelector("#p1").innerText="Please enter phone number";
+               
+                }
+            }
+
+
+          }
+          arrnum.push(obj);
+  
+  localStorage.setItem("data",JSON.stringify(arrnum))
+   
+ }
+
+ 
+
+
+
+
+ document.querySelector("#form1").addEventListener("submit",myotpfun)
+
+var otparr=[{otp:1234}]
+function myotpfun(){
+    event.preventDefault()
+
+   var num1= document.querySelector("#num1").value
+
+   
+
+    flag=0;
+    
+            otparr.map(function(ele){
+
+              if(num1==ele.otp){
+                  flag=1;
+              }
+            
+
+            })
+
+
+            if(flag==1){
+              // window.location.reload()
+              window.location.href="homepage.html"
+             var d= document.querySelector("#div--3")
+             d.innerHTML="user"
+               
+         
+              
+         
+            }
+            else{
+                document.querySelector("#p2").innerText="Invalid OTP"+" "+"\u274C";
+          
+            
+            }
+          
+           
+ 
+}
+
+
+
+
+document.querySelector("#btntop").addEventListener("click",mysearchfn)
+
+function mysearchfn(){
+  var arrsearchitem=[{item:"paracetamol"},{item:"bicasole"}]
+  var input=document.querySelector("#search")
+
+  alert("Unavailable Items")
+ 
+
+localStorage.setItem("search",JSON.stringify(arrsearchitem))
+}
+
+
+
+
+
+function requirements(){
+        var type = "Throat and Nasal Swab";
+        var fast = "Not Required"
+        document.querySelector("#paratext").innerText=""
+
+        document.querySelector("#paratext").innerText="Sample Type :"+type + "\n"+
+                "Fasting Required: "+fast ;
+                   
+                // document.querySelector("#paratext").innerText=
+                // "Fasting Required: 10-12 Hrs"              
+    }
+
+function para(){
+    document.querySelector("#paratext").innerText=""
+    document.querySelector("#paratext").innerText = "The COVID-19 laboratory test can detect positive coronavirus cases. Any individual with symptoms like cough, high fever, shortness of breath, respiratory and breathing difficulties, and with a history of international travel or contact with Covid -19 positive cases, can book this test with prior consultation by General Physician. The result of this test will be informed to the relevant authorities as mandated by the government. Home sample collection will be done by an expert technician." 
+
+
+    document.querySelector("#paratext").style.color = "#4f585e"
+    document.querySelector("#paratext").style.fontfamily = "sans,sarif"
+    document.querySelector("#paratext").style.cursor = "pointer"
+    
+    
+    
+}
+
+var button1 = document.getElementById("btn1")
+button1.style.color ="#10847e"
+button1.style.cursor ="pointer"
+var list = document.getElementById("list")
+list.style.display="none";
+button1.addEventListener("click",(event)=>{
+    if(list.style.display=="none"){
+        list.style.display="block";
+    }else{
+        list.style.display="none";
+    }
+})
+
+
+document.querySelector(".b1").addEventListener("click",mytestfun)
+
+var   arrlabtest=JSON.parse(localStorage.getItem("labtest"))||[]
+function mytestfun(){
+    var   arrlabtest=JSON.parse(localStorage.getItem("labtest"))||[]
+var  arrlabtest= [{testname:"Advanced Full Body Checkup",Price:999},
+{testname:" Post Prandial Blood Sugar ",Price:700},
+{testname:" Post Prandial Blood Sugar (PPBS) ",Price:199},
+{testname:" Fasting Blood Sugar (FBS) ",Price:199},
+{testname:"Advanced Full Body Checkup ",Price:999},
+{testname:"  Advanced Full Body Checkup with Covid Antibody ",Price:1299},
+{testname:" Advanced Renal Package ",Price:625},
+{testname:" Alcohol Impact Checkup ",Price:1499},
+ ]
+var a1=document.querySelector(".s2")
+arrlabtest.map(function(ele,index){
+    var tr=document.createElement("tr")
+var td1=document.createElement("td")
+var td2=document.createElement("td")
+
+
+
+if(index==1){
+   
+    td1.innerText=ele.testname
+    td1.style.fontFamily= "sans, sarif"
+td2.innerText=ele.Price
+td2.style.color = "black"
+td2.style.paddingLeft="200px"
+
+var btn10 = document.createElement("button")
+btn10.innerText = "Remove item"
+btn10.style.backgroundColor="teal";
+btn10.style.color="white";
+btn10.style.height ="50px";
+btn10.addEventListener("click",function(){
+    removeItem(ele,index)
+})
+
+
+td2.setAttribute("class","td2");
+tr.append(td1,td2,btn10)
+document.querySelector("tbody").append(tr)
+}
+// document.querySelector(".b2").addEventListener("click",function(){
+//     removeitem(ele,index)
+// })
+})
+localStorage.setItem("labtest",JSON.stringify(arrlabtest))
+}
+
+function removeItem(ele, index) {
+    console.log(ele, index);
+    console.log(arrlabtest)
+    arrlabtest.splice(index, 1);
+    console.log(arrlabtest);
+    localStorage.setItem("labtest", JSON.stringify(arrlabtest));
+    window.location.reload();
+  }
+
+
+
+// body style
+
+var table = document.querySelector("table")
+// table.style.background = "blue";
+table.style.marginTop ="130px"
+
+var  tbody = document.querySelector("tbody")
+tbody.style.background = "teal";
+tbody.style.marginTop ="100px";
+tbody.style.paddingTop ="100px";
+tbody.style.borderRadius ="100px";
+
+
+
+
+document.querySelector("#btntan1").addEventListener('click',myfn)
+    function myfn(){
+      window.location.href="pharmeasyCart.html"
+    }
+
+</script>

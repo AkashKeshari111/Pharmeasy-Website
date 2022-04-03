@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.Pharmeasy.com</title>
+
+    <style>
+        #index_div{
+            width:100%;
+            height: 600px;
+            display: flex;
+            /* border:1px solid red; */
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #index_div>div{
+            width: 60%;
+            height: 40%;
+            /* border:1px solid blue; */
+        }
+
+        #index_div>div>h1{
+            text-align: center;
+            color: darkcyan;
+            font-size: 25px;
+             margin-top: 50px;
+        }
+      button{
+          margin-left: 320px;
+          cursor: pointer;
+          height:35px;
+          width:150px;
+          border: 0;
+          border-radius: 7px;
+          background-color: crimson;
+          color: white;
+          font-size: 18px;
+
+      }
+
+    </style>
+</head>
+<body>
+    <div id="index_div">
+        <div>
+            <h1>Please click below to visit  our website</h1>
+            <p></p>
+            <button id="btn">click me</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#btn").addEventListener("click",myindexfun)
+
+    function myindexfun(){
+        window.location.href="homepage.html"
+    }
+</script>

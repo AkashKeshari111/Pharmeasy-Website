@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+    <script src="https://kit.fontawesome.com/6f92f2fe49.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .customContainer {
+        width: 100%;
+        /* height: 30%; */
+        /* border: 1px solid red; */
+        margin: auto;
+
+    }
+
+    .customContainer>div {
+        /* border:1px solid green; */
+        /* padding: 10px; */
+        text-align: left;
+        width: auto;
+    }
+
+    .customInnerdiv {
+        border: 1px solid gray;
+
+        /* width: 30px; */
+        /* gap: 20px; */
+        /* padding: 10px 10px; */
+        /* margin: 0px; */
+    }
+
+
+
+    .customImg {
+        margin: 30px 31px;
+    }
+
+    .customButton {
+        padding: 10px;
+        width: 70%;
+        font-size: large;
+    }
+
+   
+    /* 1st page */
+
+    
+
+    
+
+
+#btn:focus{ outline: none; }
+@media only screen and (max-width: 480px){
+    .modal-dialog{ width: 95% !important; }
+    .modal-content .modal-body{
+        padding: 60px 20px 40px !important;
+    }
+}
+
+
+
+
+
+
+
+#formcontainer{
+          width: 100%;
+          height: 600px;
+          /* border:1px solid red; */
+          display:flex;
+          justify-content: center;
+          align-items: center;
+    }
+    #form {
+  width: 500px;
+  height: 550px;
+  /* border: 1px solid rgb(7, 6, 6); */
+   /* margin-left: 460px; */
+  background: white;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+#imgdiv{
+    width:100%;
+    height:120px;
+    /* border:1px solid red; */
+    background-color:rgb(16,132,126);
+}
+#imgdiv>img{
+    width:40%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+
+#num {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 9px;
+  width: 320px;
+  height: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+#btn{
+  width: 320px;
+  height:50px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:rgb(16,132,126);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#btn:focus{
+    background-color: rgb(16,132,126);
+}
+
+
+#pnew{
+    padding-left: 35px;
+    margin-bottom: -25px;
+}
+
+    #label{
+        font-size: 16px;
+        color: rgb(94, 91, 91);
+        padding-left: 30px;
+    }
+
+    #form>p{
+        font-size: 12px;
+    }
+    #a5{
+        cursor: pointer;
+        color: green;
+    }
+
+    #p1{
+        color: red;
+        padding-left: 30px;
+        
+    }
+
+
+
+
+
+    body{
+    margin: auto;
+}
+#Healthcontainer{
+    width:100%;
+    height:auto;
+    /* border:1px solid red; */
+    background-color: rgb(16,132,126);
+    font-family: sans-serif;
+}
+
+#div1{
+    width:100%;
+    height:70px;
+    /* border:1px solid blue; */
+    display: flex;
+   padding-top: 7px;
+}
+#div1-1st{
+   width:160px;
+   height:60px;
+   /* border:1px solid teal; */
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+  
+}
+
+#pharmeasyimg{
+   width:100%;
+   height:90%;
+   cursor: pointer;
+}
+
+#div1-2nd{
+   width:850px;
+   height:51px;
+   /* border:1px solid blue; */
+   margin-left: 25px;
+   margin-top: 9px;
+   margin-bottom: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border-radius: 9px;
+}
+
+#selectpin{
+   height: 50px;
+   width:150px;
+   border:0;
+   
+   border-radius: 9px 0px 0px 9px;
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+   padding-left: 5px;    
+}
+#search{
+height: 50px;
+   width:700px;
+   padding-left: 12px;
+   border: 0;
+   /* border-radius: 0px 0px 0px 0px; */
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+}
+#btntop{
+      width:50px;
+      height:50px;
+      background-color: aliceblue;
+      border: 0;
+      border-radius: 0px 9px 9px 0px;
+    }
+    #btntop>img{
+      height:40px;
+    }
+
+
+#div2{
+    width:100%;
+    height:57px;
+    /* border:1px solid blue; */
+    display: flex;
+ align-items: center;
+ /* background-color: rgb(16,132,126); */
+ /* position:relative; */
+
+}
+#div2-1st{
+   width:475px;
+   height:57px;
+   /* border:1px solid teal; */
+   margin-left: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 18px;
+   font-weight: 400;
+
+}
+/* a{
+   text-decoration: none;
+   color: white;
+} */
+.a1{
+    color:white;
+    text-decoration: none;
+}
+.a1:hover{
+   border-bottom: 3px solid white;
+   height: 25px;
+   color: white;
+   text-decoration: none;
+}
+#div2-2nd{
+   width:430px;
+   height:57px;
+   /* border:1px solid red; */
+   margin-left: 300px;
+   display: flex;
+   align-items: center;
+   font-size: 18px; 
+}
+
+#offers{
+   margin-right: 47px;
+   color:white;
+   text-decoration: none;
+}
+
+.modal-dialog{
+    width: 350px;
+   
+}
+#btn123{
+    border: 0;
+    background-color:rgb(16,132,126);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+#img111{
+    margin-left: 30px;
+    margin-right: -40px;
+}
+
+#cart{
+color:white;
+  margin-right:25px;
+  text-decoration: none;
+}
+
+#div2-2nd>img{
+   cursor: pointer;
+}
+
+#div3{
+ width:100%;
+ height:70px;
+ /* border:1px solid red; */
+ display: flex;
+ align-items: center;
+ font-size: 12px;
+ font-family: sans-serif;
+ 
+}
+
+#homeHealthcare{
+   color: black;
+   margin-left: 170px;
+}
+#homeHealthcare+p{
+   margin-left: 15px;
+}
+
+
+
+
+
+#div--1,#div--6{
+  margin-left: 450px;
+  width:400px;
+  height:530px;
+}
+    
+
+
+
+#div--5{
+  /* margin-top: -280px; */
+  width:0%;
+  margin-left: 35px;
+  height: 20px;
+  font-size: 14px;
+  color: blue;
+  text-decoration:dotted;
+  
+}
+
+
+
+#div--3{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+#formcontainer1{
+          width: 100%;
+          height: 600px;
+          /* border:1px solid red; */
+          display:flex;
+          justify-content: center;
+          align-items: center;
+    }
+    #form1 {
+  width: 500px;
+  height: 50px;
+  /* border: 1px solid rgb(7, 6, 6); */
+   margin-top:-15px;
+  
+  background: white;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+#imgdiv1{
+    width:100%;
+    height:120px;
+    /* border:1px solid red; */
+    background-color:rgb(16,132,126);
+}
+#imgdiv1>img{
+    width:40%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+
+#num1 {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 9px;
+  width: 320px;
+  height: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+#btn1{
+  width: 320px;
+  height:50px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:rgb(16,132,126);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#btn1:focus{
+    background-color: rgb(16,132,126);
+}
+
+
+#pnew1{
+    padding-left: 35px;
+    /* padding-top: 60px; */
+}
+
+    #label1{
+        font-size: 16px;
+        color: rgb(94, 91, 91);
+        padding-left: 30px;
+    }
+
+    #form1>p{
+        font-size: 12px;
+    }
+    #a5{
+        cursor: pointer;
+        color: green;
+    }
+
+    #p2{
+        color: red;
+        padding-left: 35px;
+    }
+
+
+
+    /* 1st page over */
+
+    #login,
+    #cart {
+        margin-left: 45px;
+        margin-right: 7px;
+    }
+
+    #mainContainer {
+        width: 70%;
+        height: 800px;
+        margin: auto;
+        margin-top: 10px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #leftContainer {
+        width: 55%;
+        height: 100%;
+        /* border: 1px solid green; */
+    }
+
+    #rightContainer {
+        width: 33%;
+        height: 80%;
+        /* border: 1px solid green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .productImg {
+        height: 60px;
+        width: 60px;
+    }
+
+    #mainDiv {
+        display: flex;
+        padding: 20px;
+        /* border: 1px solid #969993; */
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    #cartItemsDisplay {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .nameDiv {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .infoDiv {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .selectDiv {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .selectDiv1>p {
+        margin: 0px;
+    }
+
+    .selectDiv>div:nth-child(2) {
+        text-align: right;
+    }
+
+    #addressDiv {
+        padding: 15px;
+        background-color: #f4f7fb;
+        border-radius: 10px;
+    }
+
+    .dropdown-menu {
+        width: 600px;
+    }
+
+    #dropdownAddButton,
+    #dropdownPromoButton,
+    #buyBtn {
+        width: 100%;
+        background-color: #10847e;
+        border: 0px;
+    }
+
+    #couponApply {
+        background-color: #10847e;
+        border: 0px;
+    }
+
+    #freeDiv {
+        text-align: center;
+        border: 1px solid red;
+    }
+
+    #orderSumDiv p {
+        margin: 0px;
+    }
+
+    #cartValueDiv,
+    #deliveryChargeDiv,
+    #totalAmountDiv {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #freeDiv{
+        background-color: #f2fff8;
+        padding: 5px;
+        border-radius: 5px;
+        border:1px dotted teal;
+        color: teal;
+    }
+</style>
+
+<body>
+  
+    <div id="Healthcontainer">
+        <div id="div1">
+            <div id="div1-1st">
+             <a href="homepage.html">  <img id="pharmeasyimg" src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpharmeasy-logo-white.png&w=256&q=75"/></a>
+            </div>
+            <div id="div1-2nd">
+                <select id="selectpin">
+                    <option value="pincode">Select Pincode</option>
+                </select>
+
+                <input id="search" type="search" value="" placeholder=" Search medicines/Healthcare Products @ 18% off">
+                <button id="btntop"><img src="search.jpg"/></button>
+            </div>
+        </div>
+
+
+        <div id="div2">
+            <div id="div2-1st">
+                <a class="a1" href="Ordermedicine.html" >Order Medicines</a>
+                <a class="a1" href="healthcareproduct.html" >Healthcare Products</a>
+                <a class="a1" href="LabTest.html" >Lab Tests</a>
+            </div>
+            <div id="div2-2nd">
+                <img src="offerimg.jpg"/>
+                <a  id="offers"href="Offer.html" ></i> Offers</a>
+                <img src="loginimg.jpg"/>
+               
+
+
+
+
+                <!-- " class="modal-header -->
+
+        
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div id="div--1"class="modal-content">
+                        <!-- <div id="div--2"> -->
+                          <!-- <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5> -->
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- </div> -->
+                        <!-- <div class="modal-body"> -->
+                          <!-- Show a second modal and hide this one with the button below. -->
+
+
+                          <form id="form">
+                          
+                            <div id="imgdiv">
+                        
+                              <img src="pharmeasysignupimg.jpg" />
+                            </div> 
+                         
+                        
+                           <br>
+                             
+                             <label id="label" for="">Quick Login / Register</label>
+                           <br>
+                              <input  id="num" type="tel" value="" placeholder="Enter your phone number"/>
+                                <p id="p1"></p>
+                              
+                               <input id="btn" type="submit" value="Continue"/>
+                               
+                               
+                             
+
+                               <!-- class="modal-footer" -->
+
+                        <!-- </div> -->
+                        <!-- <div> -->
+                          <a id="div--5"   data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" type="button"> </a>
+                          <p id="pnew">By clicking continue, you agree with our <a id="a5">Privacy Policy</a> </p>
+                        </form>
+                          <!-- class="btn btn-primary" -->
+                          <!--  -->
+                          <!--  -->
+                    
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                  </div>
+                
+
+
+
+                  <!-- class="modal-header" -->
+                  <div  class="modal fade"   id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div id="div--6"class="modal-content">
+                        <div>
+                          <!-- <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5> -->
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <!-- class="modal-body" -->
+                        <div >
+                          <!-- Hide this modal and show the first with the button below. -->
+
+                          <form id="form1">
+                          
+                            <div id="imgdiv1">
+                        
+                              <img src="pharmeasysignupimg.jpg" />
+                            </div> 
+                         
+                        
+                           <br>
+                             
+                             <label id="label1" for="">Enter OTP</label>
+                           <br>
+                              <input  id="num1" type="num" value="" placeholder="Enter OTP 1234"/>
+                                <p id="p2"></p>
+                              
+                               <input id="btn1" type="submit" value="Continue"/>
+                               
+                                <p id="pnew1">By clicking continue, you agree with our <a id="a5">Privacy Policy</a> </p>
+                               </form>
+
+                        </div>
+                        <!-- class="modal-footer" -->
+                        <div >
+                          <!-- <button id="div--4" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <a id="div--3"    data-bs-toggle="modal" href="#exampleModalToggle" >Login / Signup</a>
+               
+             
+
+
+
+                  <!-- class="btn btn-primary" -->
+
+
+
+
+
+
+
+                <img id="img111" src="cartimg.jpg"/>
+                <a id="cart" href="pharmeasyCart.html" >cart</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="hidden"></div>
+
+    <!-- <div id="div3">
+        <a id="homeHealthcare" href="home.html">Home</a>
+        <p> >  Healthcare</p>
+    </div> -->
+
+
+
+
+    <div id="mainContainer">
+        <div id="leftContainer">
+            <div id="itemNumInfo">
+                <h2><span id="itemNum"></span><span> Items In Cart</span></h2>
+            </div>
+            <div id="cartItemsDisplay">
+
+            </div>
+            <p>Items you may like</p>
+            <div id="scrollableItems">
+                <div class="customContainer">
+                    <div>
+                        <div class="customInnerdiv">
+                            <img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1">
+                        </div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv">
+                            <img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1">
+                        </div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv">
+                            <img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1">
+                        </div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv">
+                            <img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1">
+                        </div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv">
+                            <img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1">
+                        </div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv">
+                            <img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1">
+                        </div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv"><img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1"></div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv"><img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1"></div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv"><img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1"></div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv"><img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1"></div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv"><img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1"></div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="customInnerdiv"><img class="customImg"
+                                src="https://cdn01.pharmeasy.in/dam/products/I09432/neurobion-forte-tablet-30s-1-1641537319.jpg?dim=100x0&dpr=1&q=100"
+                                alt="1"></div>
+                        <div>
+                            <p class="customName">Neurobion Forte Tablet 30's</p>
+                            <p class="customQuant">30 tablets in strip</p>
+                            <span class="customMRP">MRP</span>
+                            <span class="customCancelled">Rs.34</span>
+                            <p class="customPrice">Rs.30</p>
+                            <button class="customButton">Add</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rightContainer">
+            <div id="addressDiv">
+                
+                <div><i class=" fa-solid fa-house"></i></div>
+                <div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownAddButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Add Address
+                        </button>
+                        <form class="dropdown-menu p-4 row g-3">
+                            <div class="form-group  ">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress2" class="form-label">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2"
+                                    placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+
+                </div>
+                <div id="displayAddress">
+
+                </div>
+            </div>
+            <div id="couponDiv">
+                <!-- <img src="discount.png" alt=""> -->
+                <h5><img src="discount.png" alt="">Apply Coupon</h5>
+                <input type="text" id="inputCoupon" placeholder="write code here">
+                <button type="button" class="btn btn-primary" id="couponApply">Apply</button>
+
+            </div>
+            <div id="buyDiv">
+                <button type="button" class="btn btn-primary" id="buyBtn">Proceed to buy</button>
+
+            </div>
+            <div id="freeDiv">
+                <i class="fa-solid fa-truck-fast"></i> Free delivery with cart value above ₹500
+            </div>
+            <div id="orderSumDiv">
+                <h4>Order Summary</h4>
+                <div id="cartValueDiv">
+                    <p>Cart Value</p>
+                    <p id="appendTotal"></p>
+                </div>
+                <div id="deliveryChargeDiv">
+                    <p>Delivery Charge</p>
+                    <p id="appendCharge">25</p>
+                </div>
+                <hr style="border: 1px dashed black;" />
+                <div id="totalAmountDiv">
+                    <p>Amount to be paid</p>
+                    <p id="appendTotalAmount"></p>
+                </div>
+            </div>
+            <div id="savingsDiv"></div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.customContainer').slick({
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                variableWidth: true
+
+                // accessibility: true,
+                // dots: true,
+
+                // arrows: true,
+            });
+        });
+
+    </script>
+</body>
+
+</html>
+
+<script>
+    var cartItems = JSON.parse(localStorage.getItem('pharmacartData'))
+
+    displayData(cartItems)
+    info(cartItems)
+    cartValue(cartItems)
+    displayAddress()
+    function displayData(cartItems) {
+        document.querySelector('#cartItemsDisplay').innerHTML = ""
+        cartItems.map(function (elem, index) {
+            var mainDiv = document.createElement('div')
+            mainDiv.setAttribute('id', 'mainDiv')
+            var imgDiv = document.createElement('div')
+            var nameDiv = document.createElement('div')
+            nameDiv.setAttribute('class', 'nameDiv')
+            var infoDiv = document.createElement('div')
+            infoDiv.setAttribute('class', 'infoDiv')
+            var selectDiv = document.createElement('div')
+            selectDiv.setAttribute('class', 'selectDiv')
+            var selectDiv1 = document.createElement('div')
+            selectDiv1.setAttribute('class', 'selectDiv1')
+            var selectDiv2 = document.createElement('div')
+            selectDiv2.setAttribute('class', 'selectDiv2')
+
+
+            var img = document.createElement('img')
+            img.src = elem.image_url
+            img.setAttribute('class', 'productImg')
+
+            var name = document.createElement("span");
+            name.innerText = elem.name;
+            name.setAttribute('class', 'productName')
+            var removeBtn = document.createElement('i')
+            removeBtn.setAttribute('class', 'fa-solid fa-trash-can')
+            removeBtn.addEventListener('click', function () {
+                removeItem(elem, index)
+
+            })
+            nameDiv.append(name, removeBtn)
+
+            var brand = document.createElement("p");
+            brand.textContent = elem.brand;
+
+            var quantity = document.createElement("p");
+            quantity.textContent = elem.quantity;
+
+            // var quantitySelect = document.createElement('select')
+            var word = document.createElement('p')
+            word.innerText = 'Original Price'
+            var word2 = document.createElement('p')
+            word2.innerText = 'Discounted Price'
+            var discount = document.createElement('span')
+            discount.innerText = elem.discount
+            var strikedoffprice = document.createElement('span')
+            strikedoffprice.innerText = elem.strikedoffprice
+            // selectDiv.append(quantitySelect,discount,strikedoffprice)
+            var price = document.createElement("p");
+            price.innerText = elem.price;
+
+            var delivery = document.createElement('p')
+            delivery.innerText = 'Delivery by 5th Apr-8th Apr'
+
+            selectDiv1.append(word, word2)
+            selectDiv2.append(discount, strikedoffprice, price)
+            selectDiv.append(selectDiv1, selectDiv2)
+
+            imgDiv.append(img)
+            infoDiv.append(nameDiv, brand, quantity, selectDiv, delivery)
+
+
+            document.querySelector("#cartItemsDisplay").append(mainDiv)
+            mainDiv.append(imgDiv, infoDiv)
+        })
+
+    }
+
+    function removeItem(elem, index) {
+        cartItems.splice(index, 1)
+        // console.log(cartItems);
+        localStorage.setItem('pharmacartData', JSON.stringify(cartItems))
+        displayData(cartItems)
+        info(cartItems)
+        cartValue(cartItems)
+    }
+
+    function info(cartItems) {
+
+        var length = cartItems.length
+
+        // the code below is when promo code is applied
+
+
+        // localStorage.setItem('total', JSON.stringify(total))
+        // document.querySelector('p').innerText = `You have ${length} items in your cart \n Your total amount is ${total}`
+        document.querySelector('#itemNum').innerText = length
+        // console.log(total);
+    }
+
+    function cartValue(cartItems) {
+
+        var total = cartItems.reduce(function (sum, elem) {
+            return sum + elem.price
+        }, 0)
+
+        // var inputCoupon = document.querySelector('#inputCoupon').value
+
+        var storedCoupon = JSON.parse(localStorage.getItem('Coupon'))
+        if (storedCoupon == null) {
+            storedCoupon = document.querySelector('#inputCoupon').value
+        }
+
+        if (storedCoupon == 'masai30') {
+            total = Math.ceil(total * (1 - (30 / 100)))
+            // alert('coupon applied')
+        }
+        document.querySelector('#appendTotal').innerText = total
+        if (total > 500) {
+
+            document.querySelector('#appendCharge').innerText = 'Free'
+        }
+        if (total < 500) {
+            document.querySelector('#appendCharge').innerText = '25'
+            total += 25
+        }
+
+        localStorage.setItem('total', JSON.stringify(total))
+        console.log(total);
+        document.querySelector('#appendTotalAmount').innerText = total
+    }
+
+    document.querySelector('#couponApply').addEventListener('click', function () {
+        storeInputCoupon()
+    })
+
+    function storeInputCoupon() {
+
+        var inputCoupon = document.querySelector('#inputCoupon').value
+        if (inputCoupon == 'masai30') {
+            alert('coupon applied')
+            localStorage.setItem('Coupon', JSON.stringify(inputCoupon))
+            cartValue(cartItems)
+        }
+        else {
+            alert('invalid coupon')
+        }
+
+    }
+
+    document.querySelector('.dropdown-menu').addEventListener('submit', function () {
+        storeAddress()
+    })
+
+
+    function storeAddress() {
+
+        var inputAddress = document.querySelector('#inputAddress').value
+        localStorage.setItem('address', JSON.stringify(inputAddress))
+        displayAddress()
+
+
+        // var displayaddress = document.querySelector('#displayAddress')
+        // displayaddress.innerText = storedAddress
+    }
+
+    function displayAddress() {
+        var storedAddress = JSON.parse(localStorage.getItem('address'))
+
+        var displayAddress = document.querySelector('#displayAddress')
+        if (storedAddress == null) {
+            displayAddress.innerText = ""
+
+        }
+        else {
+            displayAddress.innerText = storedAddress
+
+        }
+    }
+
+    document.querySelector('#couponApply').addEventListener('click', function () {
+        cartValue(cartItems)
+    })
+
+
+
+
+
+
+
+    document.querySelector("#form").addEventListener("submit", mybtn1)
+      arrnum=JSON.parse(localStorage.getItem("data"))||[]
+
+ function mybtn1(){
+   event.preventDefault()
+      var num=document.querySelector("#num").value
+
+   var obj={number:num}
+
+flag=0;
+flag1=0;
+flag2=0;
+   arrnum.map(function(ele){
+    if(num==ele.number && num!="" && num.length==10){
+                flag=1;
+                
+            }
+           else if(num.length!=10){
+               flag1=1;
+
+               if(num.length==0){
+                   flag2=1;
+               }
+           }
+         
+           
+
+        })
+        if(flag==1){
+         var btna= document.querySelector("#div--5")
+     
+           btna.innerHTML="click here to get otp"
+           btna.style.width="50%"
+        }
+        else{
+            if(flag1==1){
+                document.querySelector("#p1").innerText="Invalid phone number"+" "+"\u274C";
+                
+
+                if(flag2==1){
+                    document.querySelector("#p1").innerText="Please enter phone number";
+               
+                }
+            }
+
+
+          }
+          arrnum.push(obj);
+  
+  localStorage.setItem("data",JSON.stringify(arrnum))
+   
+ }
+
+ 
+
+
+
+
+ document.querySelector("#form1").addEventListener("submit",myotpfun)
+
+var otparr=[{otp:1234}]
+function myotpfun(){
+    event.preventDefault()
+
+   var num1= document.querySelector("#num1").value
+
+   
+
+    flag=0;
+    
+            otparr.map(function(ele){
+
+              if(num1==ele.otp){
+                  flag=1;
+              }
+            
+
+            })
+
+
+            if(flag==1){
+              // window.location.reload()
+              window.location.href="homepage.html"
+             var d= document.querySelector("#div--3")
+             d.innerHTML="user"
+               
+         
+              
+         
+            }
+            else{
+                document.querySelector("#p2").innerText="Invalid OTP"+" "+"\u274C";
+          
+            
+            }
+          
+           
+ 
+}
+
+
+
+
+document.querySelector("#btntop").addEventListener("click",mysearchfn)
+
+function mysearchfn(){
+  var arrsearchitem=[{item:"paracetamol"},{item:"bicasole"}]
+  var input=document.querySelector("#search")
+
+  alert("Unavailable Items")
+ 
+
+localStorage.setItem("search",JSON.stringify(arrsearchitem))
+}
+
+
+
+
+document.querySelector("#buyBtn").addEventListener("click",payment)
+
+function payment(){
+    window.location.href="payment.html"
+}
+
+</script>

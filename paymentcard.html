@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body{
+        background-color:rgb(16,132,126);
+        margin:auto;
+    }
+         #container{
+            width: 100%;
+            height:auto;
+            /* border:1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+            margin-bottom: 10px;
+        }
+      
+        #cardnum,#cardname,#cardCVV{
+            width:250px;
+            padding: 15px;
+        margin-left:60px;
+        margin-bottom: 15px;
+        border-color: rgb(238, 231, 231);
+        }
+
+        #cardnum{
+            margin-top: 15px;
+        }
+        #button{
+            width:100px;
+            padding: 5px;
+        margin-top: 12px;
+        cursor: pointer;
+        margin-left: 150px;
+        }
+        
+        form{
+            padding-top: 22px;
+            height:270px;
+            border:2px solid whitesmoke;
+            width: 400px;
+            background-color: rgb(250, 214, 214);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        h1{
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: -90px;
+            font-size: 60px;
+            color: aliceblue;
+            line-height: 10px;
+         
+        }
+        #p1{
+            padding-left: 70px;
+            margin-bottom: -20px;
+        }
+
+        #cardCVV{
+            margin-bottom: -10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment Page</h1>
+    <div id="container">
+      
+        <form>
+            <input id="cardnum"type="number" value="" placeholder="Enter your card Number"/>
+            <br>
+            <input id="cardname" type="text" value="" placeholder="Enter Name on Card"/>
+            <br>
+            <input id="cardCVV" type="number" value="" placeholder="Enter your card CVV"/>
+           <p id="p1"></p>
+            <br>
+            <input id="button" type="submit" value="PAY"/>
+        </form>
+    </div>
+</body>
+</html>
+
+
+<script>
+    document.querySelector("form").addEventListener("submit",mypaymentfun)
+ 
+
+arrpay=JSON.parse(localStorage.getItem("pay"))||[]
+    function mypaymentfun(){
+        event.preventDefault();
+        var cardnum=document.querySelector("#cardnum").value
+        var cardname=document.querySelector("#cardname").value
+        var cardCVV=document.querySelector("#cardCVV").value
+
+        var obj={cardnumber:cardnum,
+                  nameoncard:cardname,
+                   CVV:cardCVV}
+ 
+           flag=0;
+           flag1=0;
+           flag2=0;
+            arrpay.map(function(ele){
+                if(cardnum.length==12 && cardname!="" && cardCVV.length==3){
+                    flag=1;
+                }
+                if(cardnum!=12 || cardCVV!=3 ){
+                    flag1=1;
+                }
+                if(cardnum.length=="" && cardname=="" && cardCVV.length==""){
+                    flag2=1;
+                }
+             
+            })  
+            if(flag==1){
+              alert("Payment Successful")
+              window.location.href="homepage.html"
+            }
+            else {
+                if(flag1==1){
+                    var a=  document.querySelector("#p1")
+                    a.innerHTML="Incorrect Data !"
+                    a.style.color="Red"
+                }
+                 if(flag2==1){
+                    
+                    var a=  document.querySelector("#p1")
+                a.innerHTML="Please Enter Details"
+                a.style.color="blue"
+                }
+             
+            }
+
+  
+    arrpay.push(obj)
+    localStorage.setItem("pay",JSON.stringify(arrpay))
+
+
+        }
+</script>

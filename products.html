@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Products</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+  <style>
+       
+
+
+    /* 1st page */
+
+    
+
+    
+
+
+#btn:focus{ outline: none; }
+@media only screen and (max-width: 480px){
+    .modal-dialog{ width: 95% !important; }
+    .modal-content .modal-body{
+        padding: 60px 20px 40px !important;
+    }
+}
+
+
+
+
+
+
+
+#formcontainer{
+          width: 100%;
+          height: 600px;
+          /* border:1px solid red; */
+          display:flex;
+          justify-content: center;
+          align-items: center;
+    }
+    #form {
+  width: 500px;
+  height: 550px;
+  /* border: 1px solid rgb(7, 6, 6); */
+   /* margin-left: 460px; */
+  background: white;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+#imgdiv{
+    width:100%;
+    height:120px;
+    /* border:1px solid red; */
+    background-color:rgb(16,132,126);
+}
+#imgdiv>img{
+    width:40%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+
+#num {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 9px;
+  width: 320px;
+  height: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+#btn{
+  width: 320px;
+  height:50px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:rgb(16,132,126);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#btn:focus{
+    background-color: rgb(16,132,126);
+}
+
+
+#pnew{
+    padding-left: 35px;
+    margin-bottom: -25px;
+}
+
+    #label{
+        font-size: 16px;
+        color: rgb(94, 91, 91);
+        padding-left: 30px;
+    }
+
+    #form>p{
+        font-size: 12px;
+    }
+    #a5{
+        cursor: pointer;
+        color: green;
+    }
+
+    #p1{
+        color: red;
+        padding-left: 30px;
+        
+    }
+
+
+
+
+
+    body{
+    margin: auto;
+}
+#Healthcontainer{
+    width:100%;
+    height:auto;
+    /* border:1px solid red; */
+    background-color: rgb(16,132,126);
+    font-family: sans-serif;
+}
+
+#div1{
+    width:100%;
+    height:70px;
+    /* border:1px solid blue; */
+    display: flex;
+   padding-top: 7px;
+}
+#div1-1st{
+   width:160px;
+   height:60px;
+   /* border:1px solid teal; */
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+  
+}
+
+#pharmeasyimg{
+   width:100%;
+   height:90%;
+   cursor: pointer;
+}
+
+#div1-2nd{
+   width:850px;
+   height:51px;
+   /* border:1px solid blue; */
+   margin-left: 25px;
+   margin-top: 9px;
+   margin-bottom: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border-radius: 9px;
+}
+
+#selectpin{
+   height: 50px;
+   width:150px;
+   border:0;
+   
+   border-radius: 9px 0px 0px 9px;
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+   padding-left: 5px;    
+}
+#search{
+height: 50px;
+   width:700px;
+   padding-left: 12px;
+   border: 0;
+   border-radius: 0px 9px 9px 0px;
+   font-size: 16px;
+   color: #4f585e;
+   font-weight: 400;
+}
+#btntop{
+      width:50px;
+      height:50px;
+      background-color: aliceblue;
+      border: 0;
+      border-radius: 0px 9px 9px 0px;
+    }
+    #btntop>img{
+      height:40px;
+    }
+
+
+#div2{
+    width:100%;
+    height:57px;
+    /* border:1px solid blue; */
+    display: flex;
+ align-items: center;
+ /* background-color: rgb(16,132,126); */
+ /* position:relative; */
+
+}
+#div2-1st{
+   width:475px;
+   height:57px;
+   /* border:1px solid teal; */
+   margin-left: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 18px;
+   font-weight: 400;
+
+}
+/* a{
+   text-decoration: none;
+   color: white;
+} */
+.a1{
+    color:white;
+    text-decoration: none;
+}
+.a1:hover{
+   border-bottom: 3px solid white;
+   height: 25px;
+   color: white;
+   text-decoration: none;
+}
+#div2-2nd{
+   width:400px;
+   height:57px;
+   /* border:1px solid red; */
+   margin-left: 300px;
+   display: flex;
+   align-items: center;
+   font-size: 18px; 
+}
+
+#offers{
+   margin-right: 47px;
+   color:white;
+   text-decoration: none;
+}
+
+.modal-dialog{
+    width: 350px;
+   
+}
+#btn123{
+    border: 0;
+    background-color:rgb(16,132,126);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+#img111{
+    margin-left: 30px;
+}
+
+#cart{
+color:white;
+  margin-right:25px;
+  text-decoration: none;
+}
+
+#div2-2nd>img{
+   cursor: pointer;
+}
+
+#div3{
+ width:100%;
+ height:70px;
+ /* border:1px solid red; */
+ display: flex;
+ align-items: center;
+ font-size: 12px;
+ font-family: sans-serif;
+ 
+}
+
+#homeHealthcare{
+   color: black;
+   margin-left: 170px;
+}
+#homeHealthcare+p{
+   margin-left: 15px;
+}
+
+
+
+
+
+#div--1,#div--6{
+  margin-left: 450px;
+  width:400px;
+  height:530px;
+}
+    
+
+
+
+#div--5{
+  /* margin-top: -280px; */
+  width:0%;
+  margin-left: 35px;
+  height: 20px;
+  font-size: 14px;
+  color: blue;
+  text-decoration:dotted;
+  
+}
+
+
+
+#div--3{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+#formcontainer1{
+          width: 100%;
+          height: 600px;
+          /* border:1px solid red; */
+          display:flex;
+          justify-content: center;
+          align-items: center;
+    }
+    #form1 {
+  width: 500px;
+  height: 50px;
+  /* border: 1px solid rgb(7, 6, 6); */
+   margin-top:-15px;
+  
+  background: white;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+#imgdiv1{
+    width:100%;
+    height:120px;
+    /* border:1px solid red; */
+    background-color:rgb(16,132,126);
+}
+#imgdiv1>img{
+    width:40%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+
+#num1 {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 9px;
+  width: 320px;
+  height: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+#btn1{
+  width: 320px;
+  height:50px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:rgb(16,132,126);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#btn1:focus{
+    background-color: rgb(16,132,126);
+}
+
+
+#pnew1{
+    padding-left: 35px;
+    /* padding-top: 60px; */
+}
+
+    #label1{
+        font-size: 16px;
+        color: rgb(94, 91, 91);
+        padding-left: 30px;
+    }
+
+    #form1>p{
+        font-size: 12px;
+    }
+    #a5{
+        cursor: pointer;
+        color: green;
+    }
+
+    #p2{
+        color: red;
+        padding-left: 35px;
+    }
+
+
+
+    /* 1st page over */
+
+   #login,#cart{
+      margin-left: 45px;
+      margin-right: 7px;
+   }
+
+        #container {
+            width: 70%;
+            height: auto;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .innerbox {
+            
+            color: #4F585E;
+            font-size: 18px;
+            margin: 15px 10px 10px 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+        img{
+            width: 163px;
+            height: 161px;
+            margin: auto;
+            display: block;
+        }
+        .box{
+            /* border:1px solid blue; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .productImg{
+            /* border:1px solid red; */
+            margin-top: 20px;
+        }
+
+        .name{
+            color: #4F585E;
+            font-size: 18px;
+            margin: 15px 10px 10px 20px;
+            font-weight: bold;
+        }
+        .brand{
+            color: #4F585E;
+            font-size: 18px;
+            margin: 15px 10px 10px 20px;
+            font-weight: bold;
+        }
+
+        .quantity{
+            color: #4F585E;
+            font-size: 18px;
+            margin: 15px 10px 10px 20px;
+            font-weight: bold;
+        }
+
+        .strikedoffprice{
+            text-decoration: line-through;
+            background-color: green;
+            color: white;
+        }
+
+        .discount{
+            background-color: green;
+            color: white;
+        }
+        .button{
+            display: block;
+            margin: auto;
+            width: 150px;
+            height: 40px;
+            background-color: teal;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        #sortPrice{
+            background-color: teal;
+            color: white;
+            font-size: 15px;
+            width: 150px;
+            height: 40px;
+        }
+
+        #div2-2nd>img{
+            width:25px;
+            height:25px;
+        }
+
+
+        #btntop{
+            width:5px;
+            height: max-content;
+        }
+
+
+        #img111{
+            margin-right:-40px;
+        }
+        #cart{
+            padding-right: 10px;
+        }
+        #imgdiv>img{
+            margin-left: -10px;
+          width: 200px;
+          height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+   
+
+
+
+    <div id="Healthcontainer">
+        <div id="div1">
+            <div id="div1-1st">
+            <a href="homepage.html">  <img id="pharmeasyimg" src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpharmeasy-logo-white.png&w=256&q=75"/></a>  
+            </div>
+            <div id="div1-2nd">
+                <select id="selectpin">
+                    <option value="pincode">Select Pincode</option>
+                </select>
+
+                <input id="search" type="search" value="" placeholder=" Search medicines/Healthcare Products @ 18% off">
+                <!-- <button id="btntop"><img src="search.jpg"/></button> -->
+            </div>
+        </div>
+
+
+        <div id="div2">
+            <div id="div2-1st">
+                <a class="a1" href="Ordermedicine.html" >Order Medicines</a>
+                <a class="a1" href="healthcareproduct.html" >Healthcare Products</a>
+                <a class="a1" href="LabTest.html" >Lab Tests</a>
+            </div>
+            <div id="div2-2nd">
+                <img src="offerimg.jpg"/>
+                <a  id="offers" href="" ></i> Offers</a>
+                <img src="loginimg.jpg"/>
+               
+
+
+
+
+                <!-- " class="modal-header -->
+
+        
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div id="div--1"class="modal-content">
+                        <!-- <div id="div--2"> -->
+                          <!-- <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5> -->
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- </div> -->
+                        <!-- <div class="modal-body"> -->
+                          <!-- Show a second modal and hide this one with the button below. -->
+
+
+                          <form id="form">
+                          
+                            <div id="imgdiv">
+                        
+                              <img src="pharmeasysignupimg.jpg" />
+                            </div> 
+                         
+                        
+                           <br>
+                             
+                             <label id="label" for="">Quick Login / Register</label>
+                           <br>
+                              <input  id="num" type="tel" value="" placeholder="Enter your phone number"/>
+                                <p id="p1"></p>
+                              
+                               <input id="btn" type="submit" value="Continue"/>
+                               
+                               
+                             
+
+                               <!-- class="modal-footer" -->
+
+                        <!-- </div> -->
+                        <!-- <div> -->
+                          <a id="div--5"   data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" type="button"> </a>
+                          <p id="pnew">By clicking continue, you agree with our <a id="a5">Privacy Policy</a> </p>
+                        </form>
+                          <!-- class="btn btn-primary" -->
+                          <!--  -->
+                          <!--  -->
+                    
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                  </div>
+                
+
+
+
+                  <!-- class="modal-header" -->
+                  <div  class="modal fade"   id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div id="div--6"class="modal-content">
+                        <div>
+                          <!-- <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5> -->
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <!-- class="modal-body" -->
+                        <div >
+                          <!-- Hide this modal and show the first with the button below. -->
+
+                          <form id="form1">
+                          
+                            <div id="imgdiv1">
+                        
+                              <img src="pharmeasysignupimg.jpg" />
+                            </div> 
+                         
+                        
+                           <br>
+                             
+                             <label id="label1" for="">Enter OTP</label>
+                           <br>
+                              <input  id="num1" type="num" value="" placeholder="Enter OTP 1234"/>
+                                <p id="p2"></p>
+                              
+                               <input id="btn1" type="submit" value="Continue"/>
+                               
+                                <p id="pnew1">By clicking continue, you agree with our <a id="a5">Privacy Policy</a> </p>
+                               </form>
+
+                        </div>
+                        <!-- class="modal-footer" -->
+                        <div >
+                          <!-- <button id="div--4" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <a id="div--3"    data-bs-toggle="modal" href="#exampleModalToggle" >Login / Signup</a>
+               
+             
+
+
+
+                  <!-- class="btn btn-primary" -->
+
+
+
+
+
+
+
+                <img id="img111" src="cartimg.jpg"/>
+                <a id="cart" href="pharmeasyCart.html" >cart</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="hidden"></div>
+
+    <!-- <div id="div3">
+        <a id="homeHealthcare" href="home.html">Home</a>
+        <p> >  Healthcare</p>
+    </div> -->
+
+
+
+
+    
+    <!-- <button><a href="pharmeasyCart.html">Go to cart</a></button> -->
+    <h1>Products Page</h1>
+    <select id="sortPrice" onchange="handlePriceSort()">
+        <option value="">Sort By Price</option>
+        <option value="htl">High to Low</option>
+        <option value="lth">Low to High</option>
+      </select>
+    <div id="container"></div>
+
+</body>
+
+</html>
+
+<script>
+    var medicineData=[
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/T70695/supradyn-daily-multivitamin-tablets-15s-1-1641793954.jpg?dim=320x320&dpr=1&q=100",
+            name:"Supradyn Daily Multivitamin Tablets 15s",
+            brand:"SUPRADYN",
+            quantity:"15 Tablets in strip",
+            price: 1170,
+            strikedoffprice: "2599",
+            discount :'5% Off',
+            type:'Medicines'
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/J51742/maxirich-vitamin-czinc-15-tablets-1-1641793434.jpg?dim=320x320&dpr=1&q=100",
+            name:"Maxirich Daily Vitamin-C Tablets 15s",
+            brand:"MAXIRICH",
+            quantity:"15 Tablets in strip",
+            price: 117,
+            strikedoffprice: "259",
+            discount :'20% Off',
+            type:'Medicines'
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/E85132/liveasy-wellness-vitamin-c-990mg-with-zinc-10mg-powerful-immunity-booster-60-veg-tablets-2-1643882980.jpg?dim=320x320&dpr=1&q=100",
+            name:"Liveasy Wellness Vitamin C (990mg) With Zinc (10mg) " ,
+            brand:"LIVEASY",
+            quantity:"60 Tablets in BOTTLE",
+            price: 278,
+            strikedoffprice: "396",
+            discount :'15% Off',
+            type:'Medicines'
+
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/F70680/swisse-ultiboost-daily-immune-support-with-vitamin-c-zinc-and-olive-leaf-extract-60-tablets-2-1641790173.jpg?dim=320x320&dpr=1&q=100",
+            name:"Swisse Ultiboost Daily Immune Support With Vitamin C Zinc And Olive Leaf Extract - 60 Tablets",
+            brand:"SWISSE",
+            quantity:"60 Tablets in BOTTLE",
+            price: 3373,
+            strikedoffprice: "6747",
+            discount :'50% Off',
+            type:'Medicines'
+
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/F74980/swisse-beauty-biotin-with-nicotinamide-rose-hips-vitamin-c-60-tablets-bottle-2-1641795608.jpg?dim=320x320&dpr=1&q=100",
+            name:"Swisse Beauty Biotin Immune Support With Vitamin C Zinc",
+            brand:"SWISSE",
+            quantity:"15 Tablets in strip",
+            price: 110,
+            strikedoffprice: "259",
+            discount :'5% Off',
+            type:'Medicines'
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/K08794/lifelong-llpcw04-rechargeable-pedicure-device-for-callus-dead-skin-removal-feet-care-2-1641793790.jpg?dim=320x320&dpr=1&q=100",
+            name:"Pedicure Device and this is fully digital device",
+            brand:"LIFELONG",
+            quantity:"1 decice per package",
+            price: 400,
+            strikedoffprice: "490",
+            discount :'10% Off',
+            type:'Healthcare Product'
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/B88912/power-plus-3-in-1-steam-inhaler-2-1641792926.jpg?dim=320x320&dpr=1&q=100",
+            name:"Power Plus 3 In 1 Steam Inhaler",
+            brand:"N95 MASKS & SANITIZERS & SAFETY GEAR",
+            quantity:"1 Nebulizer in Box",
+            price: 1170,
+            strikedoffprice: "2599",
+            discount :'13% Off',
+            type:'Healthcare Product'
+
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/I14061/indulekha-bringha-hair-oil-bottle-of-50-ml-2-1643881306.jpg?dim=320x320&dpr=1&q=100",
+            name:"Indulekha Bringha Hair Oil Bottle Of 50 Ml",
+            brand:"INDULEKHA",
+            quantity:"50ml in a bottle",
+            price: 2233,
+            strikedoffprice: "3343",
+            discount :'25% Off',
+            type:'Healthcare Product'
+
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/I42413/new-hair-4u-5-hair-spray-bottle-of-60-ml-1-1643880140.jpg?dim=320x320&dpr=1&q=100",
+            name:"New Hair 4u 5% Hair Spray Bottle Of 60 Ml",
+            brand:"HAIR 4 U",
+            quantity:"50ml in a bottle",
+            price: 233,
+            strikedoffprice: "343",
+            discount :'25% Off',
+            type:'Healthcare Product'
+
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/E54755/everherb-aloe-vera-juice-with-pulp-rejuvenates-skin-hair-1-litre-bottle-2-1643882394.jpg?dim=320x320&dpr=1&q=100",
+            name:"Everherb Aloe Vera Juice With Pulp - Rejuvenates Skin & Hair - 1 Litre Bottle",
+            brand:"EVERHURB",
+            quantity:"50ml in a bottle",
+            price: 233,
+            strikedoffprice: "343",
+            discount :'25% Off',
+            type:'Healthcare Product'
+
+        },
+        {
+            image_url:"https://cdn01.pharmeasy.in/dam/products_otc/I40695/dettol-antiseptic-liquid-bottle-of-550-ml-2-1643880193.jpg?dim=320x320&dpr=1&q=100",
+            name:"Dettol Antiseptic Liquid Bottle Of 550 Ml",
+            brand:"DETTOL",
+            quantity:"50ml in a bottle",
+            price: 233,
+            strikedoffprice: "343",
+            discount :'25% Off',
+            type:'Healthcare Product'
+
+        },
+    
+    ]
+
+    displayData(medicineData)
+    var pharmacartItems = JSON.parse(localStorage.getItem('pharmacartData')) || []
+
+    function handlePriceSort() {
+    var selected = document.querySelector('#sortPrice').value
+    if (selected == "htl") {
+        medicineData.sort(function (a, b) {
+        return b.price - a.price;
+      });
+      displayData(medicineData);
+      console.log(medicineData);
+    }
+
+    if (selected == "lth") {
+        medicineData.sort(function (a, b) {
+        return a.price - b.price;
+      });
+      displayData(medicineData);
+    }
+  }
+
+    function displayData(medicineData) {
+    document.querySelector("#container").innerHTML=""
+    medicineData.map(function (elem) {
+      var box = document.createElement("div");
+      box.setAttribute('class','box')
+
+      var img = document.createElement("img");
+      img.src = elem.image_url;
+      img.setAttribute('class','productImg')
+
+      var name = document.createElement("p");
+      name.textContent = elem.name;
+      name.setAttribute("class","name")
+
+      var brand = document.createElement("p");
+      brand.textContent = elem.brand;
+       brand.setAttribute("class","brand")
+      var quantity = document.createElement("p");
+      quantity.textContent = elem.quantity;
+       quantity.setAttribute("class","quantity")
+      var innerBox = document.createElement("div");
+      innerBox.setAttribute('class', 'innerbox')
+
+      var price = document.createElement("span");
+      price.innerText = elem.price;
+
+      var strikedoffprice = document.createElement('span')
+      strikedoffprice.innerText = elem.strikedoffprice
+      strikedoffprice.setAttribute("class","strikedoffprice")
+
+
+      var discount = document.createElement("span");
+      discount.textContent = elem.discount;
+      discount.setAttribute("class","discount")
+      // strikedoffprice.style.text-decoration='line-through';
+
+      var button = document.createElement('button')
+      button.innerText = 'Add to cart'
+      button.setAttribute("class","button")
+      button.addEventListener('click', function () {
+        addToCart(elem)
+      })
+     
+      innerBox.append(price, strikedoffprice,discount)
+
+      box.append(img, name,brand,quantity, innerBox, button);
+
+      document.querySelector("#container").append(box);
+    });
+  }
+
+
+  function addToCart(elem) {
+    pharmacartItems.push(elem)
+    localStorage.setItem('pharmacartData', JSON.stringify(pharmacartItems))
+  }
+
+
+
+
+
+
+    
+document.querySelector("#form").addEventListener("submit", mybtn1)
+      arrnum=JSON.parse(localStorage.getItem("data"))||[]
+
+ function mybtn1(){
+   event.preventDefault()
+      var num=document.querySelector("#num").value
+
+   var obj={number:num}
+
+flag=0;
+flag1=0;
+flag2=0;
+   arrnum.map(function(ele){
+    if(num==ele.number && num!="" && num.length==10){
+                flag=1;
+                
+            }
+           else if(num.length!=10){
+               flag1=1;
+
+               if(num.length==0){
+                   flag2=1;
+               }
+           }
+         
+           
+
+        })
+        if(flag==1){
+         var btna= document.querySelector("#div--5")
+     
+           btna.innerHTML="click here to get otp"
+           btna.style.width="50%"
+        }
+        else{
+            if(flag1==1){
+                document.querySelector("#p1").innerText="Invalid phone number"+" "+"\u274C";
+                
+
+                if(flag2==1){
+                    document.querySelector("#p1").innerText="Please enter phone number";
+               
+                }
+            }
+
+
+          }
+          arrnum.push(obj);
+  
+  localStorage.setItem("data",JSON.stringify(arrnum))
+   
+ }
+
+ 
+
+
+
+
+ document.querySelector("#form1").addEventListener("submit",myotpfun)
+
+var otparr=[{otp:1234}]
+function myotpfun(){
+    event.preventDefault()
+
+   var num1= document.querySelector("#num1").value
+
+   
+
+    flag=0;
+    
+            otparr.map(function(ele){
+
+              if(num1==ele.otp){
+                  flag=1;
+              }
+            
+
+            })
+
+
+            if(flag==1){
+              // window.location.reload()
+              window.location.href="homepage.html"
+             var d= document.querySelector("#div--3")
+             d.innerHTML="user"
+               
+         
+              
+         
+            }
+            else{
+                document.querySelector("#p2").innerText="Invalid OTP"+" "+"\u274C";
+          
+            
+            }
+          
+           
+ 
+}
+
+
+
+
+document.querySelector("#btntop").addEventListener("click",mysearchfn)
+
+function mysearchfn(){
+  var arrsearchitem=[{item:"paracetamol"},{item:"bicasole"}]
+  var input=document.querySelector("#search")
+
+  alert("Unavailable Items")
+ 
+
+localStorage.setItem("search",JSON.stringify(arrsearchitem))
+}
+
+
+
+</script>
