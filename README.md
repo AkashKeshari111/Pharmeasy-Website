@@ -13,10 +13,10 @@ Here is the link of our website live on netlify: - https://cerulean-macaron-cbc5
 
  - [Govind Sahu](https://github.com/sgovind158)
  - [Vivek Rana](https://github.com/vivek13420)
- - [Rohit Kumar Malav](AkashKeshari111)
+ - [Rohit Kumar Malav](https://github.com/rohit1620?tab=repositories)
  - [Akash Keshari ](https://github.com/AkashKeshari111)
  - [D Venkataraju](https://github.com/Venkat0003)
- - [Atul Pandey](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [Atul Pandey](https://github.com/AtulPandey429/AtulPandey429)
 
 
 ## Pages and Features
