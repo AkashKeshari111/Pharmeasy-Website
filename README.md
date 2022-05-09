@@ -84,5 +84,4 @@ Footer page
 - Our skills in JavaScript and DOM manipulation became better.
 - We all learned how to plan a project and execute that.
 
-![App Screenshot](https://cdn-images-1.medium.com/max/800/1*wmD5FWihwzFv2kF-n0ruhw.png)
-![App Screenshot](https://assets.myntassets.com/h_560,q_90,w_420/v1/assets/images/12816462/2020/11/24/ba18a805-4903-48a4-a136-c60ca39b22911606200984349-HERENOW-Men-Tshirts-1551606200983033-1.jpg)
+
