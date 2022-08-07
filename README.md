@@ -8,7 +8,7 @@ You can either pay online or opt for COD (cash on delivery) for your orders.
 ## About This Project
 This is a team project, built by us in the Construct Week - Unit 2 at Masai School.
 
-Here is the link of our website live on netlify: - https://cerulean-macaron-cbc50c.netlify.app/
+Here is the link of our website live on netlify: - https://1pharmeasy.netlify.app/
 ## Our Team Member
 
  - [Govind Sahu](https://github.com/sgovind158)
